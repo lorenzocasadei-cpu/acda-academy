@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angiografia con CO₂ per il medico: linee guida, protocolli e gestione del paziente nefropatico | ACDA Academy</title>
+  <meta name="description" content="Risorse cliniche per medici di base, chirurghi vascolari e radiologi interventisti: quando usare la CO₂ invece del mezzo di contrasto iodato, protocolli di rischio, costi e come indirizzare il paziente.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acda-academy.com/medico.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Angiografia con CO₂ — Risorse per il medico",
+    "description": "Linee guida cliniche, protocolli di rischio e risorse per medici di base e specialisti sull'angiografia con CO₂ nei pazienti nefropatici",
+    "url": "https://acda-academy.com/medico.html",
+    "inLanguage": "it",
+    "audience": {"@type": "MedicalAudience", "audienceType": "Medici, chirurghi vascolari, radiologi interventisti"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --teal:       #00677F;
+      --teal-light: #58C5C0;
+      --teal-dark:  #00363B;
+      --navy:       #003F5C;
+      --orange:     #EF7D00;
+      --sand:       #DEDCD2;
+      --black:      #111111;
+      --white:      #ffffff;
+      --text:       #1a1a1a;
+      --muted:      #4a5a63;
+      --border:     #d0d8dc;
+      --bg:         #f4f6f6;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; font-size: 16px; }
+
+    header { background: var(--white); border-bottom: 2px solid var(--teal); padding: 0 1.25rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .04em; }
+    .logo span { color: var(--teal-light); }
+    .back-link { font-size: .82rem; font-weight: 600; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .05em; }
+    .back-link:hover { color: var(--orange); }
+
+    .jump-nav { background: var(--sand); border-bottom: 1px solid rgba(0,103,127,.15); padding: .9rem 1.25rem; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+    .jump-nav-inner { max-width: 900px; margin: 0 auto; display: flex; gap: .5rem; }
+    .jump-nav a { display: inline-block; padding: .4rem .9rem; border-radius: 100px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; text-decoration: none; color: var(--teal); border: 1.5px solid var(--teal); white-space: nowrap; transition: background .15s, color .15s; }
+    .jump-nav a:hover { background: var(--teal); color: white; }
+
+    .hero { background: var(--navy); color: white; padding: 3.5rem 1.25rem 3rem; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: .75rem; color: rgba(255,255,255,.5); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--teal-light); text-decoration: none; }
+    .tag { display: inline-block; background: rgba(88,197,192,.18); border: 1px solid rgba(88,197,192,.3); border-radius: 2px; padding: .22rem .8rem; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.8rem, 5vw, 2.9rem); font-weight: 700; text-transform: uppercase; letter-spacing: .02em; line-height: 1.1; margin-bottom: 1rem; }
+    .hero h1 span { color: var(--teal-light); }
+    .hero p { font-size: 1rem; color: rgba(255,255,255,.75); font-weight: 300; line-height: 1.7; max-width: 680px; }
+
+    /* TABS */
+    .tab-strip { background: var(--white); border-bottom: 2px solid var(--border); padding: 0 1.25rem; overflow-x: auto; white-space: nowrap; }
+    .tab-strip-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 0; }
+    .tab-btn { padding: .9rem 1.3rem; border: none; background: none; cursor: pointer; font-family: 'Barlow', sans-serif; font-size: .85rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; transition: color .2s, border-color .2s; }
+    .tab-btn.active { color: var(--teal); border-bottom-color: var(--teal); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .content { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+
+    .block { margin-bottom: 3rem; }
+    .block-label { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); margin-bottom: .4rem; }
+    h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.45rem, 3.5vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--teal-dark); margin-bottom: .75rem; line-height: 1.15; }
+    h3 { font-size: .97rem; font-weight: 700; color: var(--teal-dark); margin: 1.4rem 0 .4rem; text-transform: uppercase; letter-spacing: .04em; font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; }
+    p { color: var(--muted); margin-bottom: .75rem; font-size: .95rem; line-height: 1.75; }
+    strong { color: var(--text); }
+
+    /* RISK TABLE */
+    .risk-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .87rem; }
+    .risk-table th { background: var(--teal-dark); color: white; padding: .7rem .9rem; text-align: left; font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+    .risk-table td { padding: .65rem .9rem; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: middle; line-height: 1.5; }
+    .risk-table tr:last-child td { border-bottom: none; }
+    .risk-table tr:nth-child(even) td { background: var(--bg); }
+    .risk-table td:first-child { font-weight: 600; color: var(--text); }
+    .badge { display: inline-block; padding: .2rem .6rem; border-radius: 100px; font-size: .75rem; font-weight: 700; }
+    .badge.alto { background: rgba(239,125,0,.15); color: var(--orange); }
+        .badge.medio { background: rgba(0,103,127,.12); color: var(--teal); }
+    .badge.basso { background: rgba(88,197,192,.15); color: #007a6e; }
+
+    /* INFO BOX */
+    .info-box { background: rgba(0,103,127,.06); border-left: 3px solid var(--teal); border-radius: 0 6px 6px 0; padding: 1rem 1.1rem; margin: 1.25rem 0; font-size: .9rem; color: var(--teal-dark); line-height: 1.65; }
+    .info-box.orange { background: rgba(239,125,0,.07); border-color: var(--orange); color: var(--text); }
+    .info-box.green { background: rgba(88,197,192,.1); border-color: var(--teal-light); }
+
+    /* CHECK LIST */
+    .check-list { list-style: none; margin: .75rem 0; }
+    .check-list li { display: flex; gap: .75rem; align-items: flex-start; padding: .45rem 0; font-size: .92rem; color: var(--muted); border-bottom: 1px solid var(--border); line-height: 1.55; }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list li .ic { flex-shrink: 0; color: var(--teal); font-weight: 700; }
+
+    /* PROTOCOL BOX */
+    .protocol { background: var(--teal-dark); color: white; border-radius: 8px; padding: 1.5rem 1.25rem; margin: 1.5rem 0; }
+    .protocol h3 { color: var(--teal-light); margin-top: 0; font-size: 1rem; margin-bottom: .75rem; }
+    .protocol ol { padding-left: 1.3rem; }
+    .protocol li { font-size: .9rem; color: rgba(255,255,255,.82); padding: .35rem 0; line-height: 1.6; }
+    .protocol li strong { color: white; }
+
+    /* STATS GRID */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .stat-box { background: var(--teal); border-radius: 6px; padding: 1.1rem; text-align: center; }
+    .stat-n { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: white; display: block; line-height: 1; }
+    .stat-l { font-size: .78rem; color: rgba(255,255,255,.82); margin-top: .3rem; line-height: 1.4; }
+
+    /* COMPARE */
+    .compare { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .86rem; }
+    .compare th { background: var(--teal-dark); color: white; padding: .7rem .85rem; text-align: left; font-weight: 700; font-size: .77rem; text-transform: uppercase; letter-spacing: .05em; }
+    .compare td { padding: .65rem .85rem; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: top; line-height: 1.5; }
+    .compare tr:last-child td { border-bottom: none; }
+    .compare tr:nth-child(even) td { background: var(--bg); }
+    .compare td:first-child { font-weight: 600; color: var(--text); width: 30%; }
+    .good { color: #007a6e !important; font-weight: 700 !important; }
+    .bad { color: var(--orange) !important; }
+
+    /* CTA */
+    .cta-card { background: var(--teal-dark); color: white; border-radius: 8px; padding: 1.75rem 1.5rem; margin: 2rem 0; text-align: center; }
+    .cta-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; color: white; margin-bottom: .5rem; margin-top: 0; }
+    .cta-card p { color: rgba(255,255,255,.75); font-size: .9rem; margin-bottom: 1.25rem; }
+    .cta-card a.btn { display: inline-block; background: var(--orange); color: white; padding: .75rem 1.6rem; border-radius: 3px; text-decoration: none; font-weight: 700; font-size: .87rem; text-transform: uppercase; letter-spacing: .04em; }
+    .cta-card .note { display: block; margin-top: .75rem; font-size: .82rem; color: rgba(255,255,255,.55); }
+
+    details { border: 1px solid rgba(0,103,127,.15); border-left: 3px solid var(--teal); border-radius: 2px; margin-bottom: .6rem; background: white; }
+    summary { padding: .95rem 1.1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: var(--teal-dark); gap: .75rem; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--teal); flex-shrink: 0; font-weight: 300; transition: transform .2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details[open] summary { color: var(--teal); }
+    .faq-ans { padding: .85rem 1.1rem 1.1rem; border-top: 1px solid var(--border); font-size: .88rem; color: var(--muted); line-height: 1.75; }
+    .faq-ans ul { list-style: disc; padding-left: 1.2rem; margin-top: .4rem; }
+    .faq-ans li { padding: .2rem 0; }
+
+    .divider { border: none; border-top: 2px solid var(--sand); margin: 2.5rem 0; }
+
+    footer { background: var(--black); color: rgba(255,255,255,.5); padding: 2rem 1.25rem 1.25rem; font-size: .83rem; margin-top: 3rem; }
+    .ft { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 1rem; }
+    .ft-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--teal-light); text-transform: uppercase; }
+    .ft-links { display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
+    .ft-links a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .82rem; }
+    .ft-links a:hover { color: var(--teal-light); }
+    .ft-disc { max-width: 900px; margin: 0 auto; color: rgba(255,255,255,.28); font-size: .76rem; line-height: 1.6; }
+
+    @media (max-width: 500px) {
+      .compare, .risk-table { font-size: .78rem; }
+      .compare th, .compare td, .risk-table th, .risk-table td { padding: .5rem .6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ACDA <span>Academy</span></a>
+    <a href="/" class="back-link">← Home</a>
+  </div>
+</header>
+
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <a href="#rischio">Rischio renale</a>
+    <a href="#indicazioni">Indicazioni CO₂</a>
+    <a href="#protocollo">Protocollo</a>
+    <a href="#costi">Costi</a>
+    <a href="#mmg">Medico di base</a>
+    <a href="#specialista">Specialista</a>
+    <a href="#strutture">Strutture</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a> › Risorse per il medico</div>
+    <div class="tag">🩺 Per medici, chirurghi vascolari e radiologi interventisti</div>
+    <h1>CO₂ come mezzo di contrasto:<br><span>guida clinica per il medico</span></h1>
+    <p>Quando usare l'angiografia con CO₂ invece del mezzo di contrasto iodato, come identificare i pazienti ad alto rischio renale, protocolli pratici e impatto economico sull'ospedale.</p>
+  </div>
+</div>
+
+<div class="tab-strip">
+  <div class="tab-strip-inner">
+    <button class="tab-btn active" onclick="showTab('mmg', this)">🏥 Medico di base</button>
+    <button class="tab-btn" onclick="showTab('spec', this)">🔬 Chirurgo / Radiologo</button>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- =================== TAB MMG =================== -->
+  <div id="tab-mmg" class="tab-content active">
+
+    <div class="block" id="mmg">
+      <span class="block-label">Per il medico di medicina generale</span>
+      <h2>Quando il tuo paziente deve fare un'angiografia: cosa sapere e come indirizzarlo</h2>
+      <p>Il medico di base è spesso il primo a ricevere la richiesta di chiarimenti da parte del paziente — e il primo a poter fare la differenza, indirizzando verso strutture che utilizzano tecniche più sicure per la funzione renale.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="rischio">
+      <span class="block-label">Valutazione pre-procedurale</span>
+      <h2>Chi è davvero a rischio di nefropatia da contrasto?</h2>
+      <p>La nefropatia da mezzo di contrasto (CI-AKI) rimane una delle cause iatrogene più frequenti di danno renale acuto in ospedale. Identificare i pazienti a rischio prima della procedura è il momento più efficace per prevenirla.</p>
+
+      <div class="stat-grid">
+        <div class="stat-box"><span class="stat-n">1–5%</span><div class="stat-l">pazienti con reni sani sviluppa CI-AKI</div></div>
+        <div class="stat-box"><span class="stat-n">25–30%</span><div class="stat-l">pazienti con CKD stadio 3–4 + diabete</div></div>
+        <div class="stat-box"><span class="stat-n">40–50%</span><div class="stat-l">pazienti ad alto rischio multiplo</div></div>
+        <div class="stat-box"><span class="stat-n">+3,5 gg</span><div class="stat-l">degenza media aggiuntiva per paziente con CI-AKI</div></div>
+      </div>
+
+      <h3>Stratificazione del rischio per GFR</h3>
+      <table class="risk-table">
+        <thead><tr><th>GFR (ml/min/1.73m²)</th><th>Stadio CKD</th><th>Rischio CI-AKI</th><th>Raccomandazione</th></tr></thead>
+        <tbody>
+          <tr><td>&gt; 60</td><td>1–2</td><td><span class="badge basso">Basso</span></td><td>Mezzo iodato con precauzioni standard (idratazione)</td></tr>
+          <tr><td>45–60</td><td>3a</td><td><span class="badge medio">Moderato</span></td><td>Valutare CO₂ se disponibile; idratazione e.v. raccomandata</td></tr>
+          <tr><td>30–45</td><td>3b</td><td><span class="badge alto">Elevato</span></td><td>Preferire CO₂; se si usa iodio, massima dose minima</td></tr>
+          <tr><td>&lt; 30</td><td>4–5</td><td><span class="badge alto">Molto elevato</span></td><td>CO₂ raccomandata; iodio solo se non sostituibile</td></tr>
+          <tr><td>Dialisi</td><td>5D</td><td><span class="badge basso">Renale: assente</span></td><td>CO₂ preferibile per evitare complicanze sistemiche</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Fattori di rischio aggiuntivi</h3>
+      <ul class="check-list">
+        <li><span class="ic">⚠</span><span><strong>Diabete mellito</strong> — anche con GFR &gt; 60, aumenta significativamente il rischio</span></li>
+        <li><span class="ic">⚠</span><span><strong>Arteriopatia periferica</strong> — spesso associata a CKD subclinica</span></li>
+        <li><span class="ic">⚠</span><span><strong>Metformina in corso</strong> — rischio di acidosi lattica; sospendere 48h prima se si usa mezzo iodato</span></li>
+        <li><span class="ic">⚠</span><span><strong>FANS e diuretici</strong> — riducono la perfusione renale</span></li>
+        <li><span class="ic">⚠</span><span><strong>Disidratazione</strong> — amplifica il danno nefrotossico</span></li>
+        <li><span class="ic">⚠</span><span><strong>Scompenso cardiaco</strong> — riduce il flusso renale basale</span></li>
+        <li><span class="ic">⚠</span><span><strong>Età &gt; 70 anni</strong> — la funzione renale si riduce fisiologicamente con l'età</span></li>
+      </ul>
+
+      <div class="info-box orange">⚠ <strong>La triade ad altissimo rischio:</strong> diabete + CKD stadio 3b–4 + arteriopatia periferica. In questi pazienti il mezzo di contrasto iodato dovrebbe essere evitato ogni volta che esiste un'alternativa praticabile come la CO₂.</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="indicazioni">
+      <span class="block-label">Indicazioni cliniche</span>
+      <h2>Quando e come indicare la CO₂ nel quesito clinico</h2>
+      <p>Il medico di base può fare la differenza nella catena diagnostica indicando esplicitamente nel quesito clinico la necessità di una tecnica alternativa al mezzo di contrasto iodato.</p>
+
+      <div class="protocol">
+        <h3>📋 Come scrivere il quesito clinico</h3>
+        <ol>
+          <li><strong>Indicare la condizione renale:</strong> "Paziente con CKD stadio 3b (GFR: ___ ml/min) e diabete mellito tipo 2."</li>
+          <li><strong>Segnalare il rischio:</strong> "Controindicazione relativa al mezzo di contrasto iodato per elevato rischio di CI-AKI."</li>
+          <li><strong>Richiedere l'alternativa:</strong> "Si richiede angiografia con CO₂ come mezzo di contrasto alternativo (se tecnicamente applicabile per la sede anatomica richiesta)."</li>
+          <li><strong>Allegare i dati:</strong> Creatinina e GFR recenti, elenco farmaci (metformina, FANS, diuretici), eventuale storia di reazioni a mezzi di contrasto.</li>
+        </ol>
+      </div>
+
+      <h3>Dove è indicata la CO₂ e dove no</h3>
+      <table class="compare">
+        <thead><tr><th>Sede anatomica</th><th>CO₂ indicata?</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Arterie arti inferiori</td><td class="good">✓ Prima scelta</td><td>Indicazione principale, eccellente qualità immagine</td></tr>
+          <tr><td>Aorta addominale / EVAR</td><td class="good">✓ Indicata</td><td>Ampio utilizzo nei protocolli zero-contrast</td></tr>
+          <tr><td>Arterie renali</td><td class="good">✓ Indicata</td><td>Particolarmente utile proprio nei nefropatici</td></tr>
+          <tr><td>Arterie viscerali</td><td class="good">✓ Con cautela</td><td>Utilizzo crescente, dipende dall'esperienza del centro</td></tr>
+          <tr><td>Fistole per dialisi</td><td class="good">✓ Indicata</td><td>Ottima alternativa per pazienti dializzati</td></tr>
+          <tr><td>Arterie coronarie</td><td class="bad">✗ Non indicata</td><td>Rischio di embolia gassosa cerebrale sopra il diaframma</td></tr>
+          <tr><td>Vasi cerebrali / carotidi</td><td class="bad">✗ Non indicata</td><td>Controindicata sopra il diaframma</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Gestione pratica</span>
+      <h2>Cosa fare prima e dopo la procedura</h2>
+
+      <h3>Pre-procedura — check-list per il MMG</h3>
+      <ul class="check-list">
+        <li><span class="ic">✓</span><span>Richiedere creatinina e GFR aggiornati (entro 3 mesi, preferibilmente entro 30 giorni)</span></li>
+        <li><span class="ic">✓</span><span>Sospendere <strong>metformina</strong> 48h prima della procedura (se si usa mezzo iodato); riprendere dopo 48h con GFR stabile</span></li>
+        <li><span class="ic">✓</span><span>Valutare sospensione temporanea di <strong>FANS e diuretici</strong> in accordo con lo specialista</span></li>
+        <li><span class="ic">✓</span><span>Assicurarsi che il paziente sia adeguatamente <strong>idratato</strong> il giorno dell'esame</span></li>
+        <li><span class="ic">✓</span><span>Raccogliere anamnesi allergologica: precedenti reazioni a mezzi di contrasto, allergie allo iodio</span></li>
+        <li><span class="ic">✓</span><span>Indicare nel quesito clinico il profilo di rischio renale e richiedere esplicitamente la CO₂ se indicata</span></li>
+      </ul>
+
+      <h3>Post-procedura — monitoraggio</h3>
+      <ul class="check-list">
+        <li><span class="ic">✓</span><span>Richiedere creatinina e GFR di controllo a <strong>24–48h</strong> dalla procedura (se usato mezzo iodato)</span></li>
+        <li><span class="ic">✓</span><span>In caso di aumento della creatinina &gt; 0.3 mg/dL o &gt; 50% dal basale: consulenza nefrologica</span></li>
+        <li><span class="ic">✓</span><span>Ripristinare metformina solo dopo conferma della stabilità della funzione renale</span></li>
+        <li><span class="ic">✓</span><span>Monitorare diuresi nelle 24h successive all'esame</span></li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Comunicazione con il paziente</span>
+      <h2>Come spiegare la CO₂ al paziente preoccupato</h2>
+      <p>La preoccupazione più comune del paziente è che la CO₂ sia "sperimentale" o "pericolosa". Alcune frasi utili per rassicurare:</p>
+
+      <details>
+        <summary>"Ma il gas nelle vene non è pericoloso?"</summary>
+        <div class="faq-ans">La CO₂ è un gas prodotto naturalmente dall'organismo in quantità enormemente superiori a quelle usate nell'angiografia. Viene eliminata rapidamente dai polmoni semplicemente respirando. Con i moderni sistemi di iniezione automatica la procedura è sicura e controllata. Oltre 30 anni di utilizzo clinico e letteratura scientifica robusta ne confermano la sicurezza.</div>
+      </details>
+      <details>
+        <summary>"È una tecnica nuova? Preferisco il mezzo di contrasto normale"</summary>
+        <div class="faq-ans">L'angiografia con CO₂ è utilizzata in medicina da oltre 30 anni ed è raccomandata dalle principali linee guida internazionali di radiologia interventistica e chirurgia vascolare per i pazienti ad alto rischio renale. Non è sperimentale — è lo standard di cura per i pazienti nefropatici nei centri specializzati.</div>
+      </details>
+      <details>
+        <summary>"Le immagini con il gas saranno meno chiare?"</summary>
+        <div class="faq-ans">Con i moderni sistemi di iniezione digitale automatica la qualità delle immagini ottenibili con CO₂ è clinicamente adeguata per le procedure degli arti inferiori e dell'aorta. In alcuni casi può essere usata in combinazione con piccole dosi di mezzo iodato (tecnica "CO₂-first") per ottimizzare ulteriormente la qualità, mantenendo comunque una riduzione significativa del carico nefrotossico.</div>
+      </details>
+
+      <div class="info-box">💡 Puoi inviare il paziente alla pagina <a href="/paziente.html" style="color:var(--teal);font-weight:600;">paziente.html</a> di questo sito per una spiegazione semplice e completa da leggere prima dell'esame.</div>
+    </div>
+
+  </div><!-- end tab-mmg -->
+
+  <!-- =================== TAB SPECIALISTA =================== -->
+  <div id="tab-spec" class="tab-content">
+
+    <div class="block" id="specialista">
+      <span class="block-label">Per il chirurgo vascolare e il radiologo interventista</span>
+      <h2>Angiografia con CO₂: dalla tecnica alla standardizzazione del protocollo</h2>
+      <p>La CO₂ come mezzo di contrasto non è più una nicchia: è lo standard di cura raccomandata per i pazienti nefropatici e rappresenta un asset clinico e di reputazione per i centri che la adottano in modo sistematico.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Perché sistematizzare</span>
+      <h2>Il problema: AKI da contrasto nei pazienti endovascolari</h2>
+      <p>I pazienti che arrivano in sala angiografica per arteriopatia periferica sono spesso gli stessi che presentano il profilo di rischio più alto per CI-AKI: anziani, diabetici, con CKD subclinica o conclamata. È la tempesta perfetta.</p>
+
+      <div class="stat-grid">
+        <div class="stat-box"><span class="stat-n">~30%</span><div class="stat-l">dei pazienti con PAD ha CKD stadio 3 o superiore</div></div>
+        <div class="stat-box"><span class="stat-n">50–70%</span><div class="stat-l">di questi ha anche diabete mellito</div></div>
+        <div class="stat-box"><span class="stat-n">+40%</span><div class="stat-l">mortalità a 1 anno nei pazienti che sviluppano CI-AKI</div></div>
+        <div class="stat-box"><span class="stat-n">100+</span><div class="stat-l">strutture in Italia già equipaggiate con tecnologia CO₂</div></div>
+      </div>
+
+      <div class="info-box orange">⚠ <strong>Responsabilità medico-legale:</strong> in presenza di un paziente con CKD documentata per cui esiste un'alternativa al mezzo di contrasto iodato (la CO₂), l'uso di quest'ultimo senza documentare le ragioni cliniche espone a rischio di contestazione.</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="protocollo">
+      <span class="block-label">Protocollo operativo</span>
+      <h2>Come strutturare un protocollo CO₂ nel tuo centro</h2>
+
+      <div class="protocol">
+        <h3>Fase 1 — Selezione del paziente</h3>
+        <ol>
+          <li>Verificare GFR pre-procedurale (soglia critica: &lt; 45 ml/min → CO₂ preferenziale)</li>
+          <li>Raccogliere allergie al mezzo di contrasto e uso di metformina</li>
+          <li>Valutare sede anatomica: sotto il diaframma → CO₂ indicata</li>
+          <li>Documentare la scelta nel consenso informato</li>
+        </ol>
+      </div>
+
+      <div class="protocol">
+        <h3>Fase 2 — Tecnica di iniezione</h3>
+        <ol>
+          <li><strong>Sistema di iniezione automatico e digitale</strong> — eliminare il dosaggio manuale; garantisce controllo preciso di volume, pressione e velocità di iniezione</li>
+          <li>Fonte di CO₂ medicale certificata (purezza &gt; 99,9%)</li>
+          <li>Volumi tipici: 20–60 ml per iniezione, con pause adeguate tra le iniezioni per permettere la clearance polmonare</li>
+          <li>Posizionamento del paziente: posizione di Trendelenburg per migliorare la qualità delle immagini agli arti inferiori</li>
+          <li>Acquisizione immagini: DSA (Digital Subtraction Angiography) con protocolli ottimizzati per CO₂</li>
+        </ol>
+      </div>
+
+      <div class="protocol">
+        <h3>Fase 3 — Approccio ibrido (CO₂-first)</h3>
+        <ol>
+          <li>Eseguire l'intera procedura con CO₂ come mezzo primario</li>
+          <li>Usare mezzo iodato solo per fasi critiche che richiedono risoluzione massima (es. angioplastica in zona critica)</li>
+          <li>Obiettivo: ridurre la dose totale di mezzo iodato &gt; 70% rispetto al protocollo standard</li>
+          <li>Documentare la dose totale di mezzo iodato usata per ogni caso</li>
+        </ol>
+      </div>
+
+      <h3>Controindicazioni assolute alla CO₂</h3>
+      <ul class="check-list">
+        <li><span class="ic">✗</span><span>Procedure sopra il diaframma (coronarie, carotidi, vertebrali, arco aortico)</span></li>
+        <li><span class="ic">✗</span><span>Shunt intracardiaci o intrapolmonari destro-sinistro (rischio embolia sistemica)</span></li>
+        <li><span class="ic">✗</span><span>Ipertensione polmonare severa</span></li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="costi">
+      <span class="block-label">Impatto economico</span>
+      <h2>Costi e benefici per l'ospedale: il caso della value-based healthcare</h2>
+      <p>La nefropatia da mezzo di contrasto non è solo un problema clinico — è un problema economico rilevante per qualsiasi struttura ospedaliera che adotti logiche di value-based healthcare.</p>
+
+      <h3>Costo diretto di un caso di CI-AKI</h3>
+      <ul class="check-list">
+        <li><span class="ic">→</span><span><strong>+3–5 giorni di degenza aggiuntiva</strong> per paziente che sviluppa CI-AKI</span></li>
+        <li><span class="ic">→</span><span><strong>Costo degenza aggiuntiva:</strong> 800–1.200 €/giorno in reparto ordinario</span></li>
+        <li><span class="ic">→</span><span><strong>Dialisi d'urgenza</strong> (nei casi gravi): 400–600 € per seduta, spesso ripetuta</span></li>
+        <li><span class="ic">→</span><span><strong>Riammissioni</strong> entro 30 giorni: frequenti nei pazienti che sviluppano CI-AKI post-procedurale</span></li>
+        <li><span class="ic">→</span><span><strong>Impatto sui DRG:</strong> complicanze post-procedurali riducono il margine del ricovero</span></li>
+      </ul>
+
+      <div class="info-box green">
+        💡 <strong>Risparmio stimato:</strong> un centro che esegue 200 angiografie/anno su pazienti ad alto rischio, riducendo l'incidenza di CI-AKI dal 25% al 5% grazie all'adozione sistematica della CO₂, evita circa 40 casi/anno di CI-AKI — con un risparmio potenziale di 120.000–200.000 € annui solo in degenze evitate.
+      </div>
+
+      <h3>Il costo della CO₂ vs il mezzo di contrasto iodato</h3>
+      <p>Il costo del gas CO₂ medicale è significativamente inferiore a quello del mezzo di contrasto iodato per procedura. L'investimento principale è nel sistema di iniezione automatica, che si ammortizza rapidamente considerando i costi delle complicanze evitate.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Domande cliniche frequenti</span>
+      <h2>FAQ cliniche per lo specialista</h2>
+
+      <details>
+        <summary>La qualità delle immagini con CO₂ è sufficiente per le procedure complesse?</summary>
+        <div class="faq-ans">
+          Con i moderni sistemi di iniezione digitale automatica e i protocolli DSA ottimizzati, la qualità diagnostica è clinicamente adeguata per la grande maggioranza delle procedure degli arti inferiori e dell'aorta. La CO₂ ha proprietà fisiche diverse dal mezzo iodato: i gas comprimibili producono artefatti diversi che richiedono un adattamento della tecnica di acquisizione, ma non inficiano la diagnosi. Per le fasi più critiche di una procedura è sempre possibile integrare con una piccola dose di mezzo iodato (approccio ibrido CO₂-first).
+        </div>
+      </details>
+
+      <details>
+        <summary>Come gestire il paziente in dialisi che deve fare un'angiografia?</summary>
+        <div class="faq-ans">
+          Nel paziente dializzato la preoccupazione per la CI-AKI è già risolta (i reni non funzionano), ma l'uso di mezzo iodato rimane sconsigliato perché può danneggiare la residua funzione renale, rendere più difficoltosa la gestione del fluido e, in alcuni casi, complicare la gestione della fistola per dialisi. La CO₂ è la scelta ideale — specialmente per le angiografie di fistole arterovenose, dove offre un'ottima qualità immagine.
+        </div>
+      </details>
+
+      <details>
+        <summary>Come gestire il caso in cui la CO₂ da sola non è sufficiente?</summary>
+        <div class="faq-ans">
+          <ul>
+            <li>Tecnica ibrida CO₂-first: usare CO₂ per l'intera fase diagnostica e solo piccole dosi di mezzo iodato per la fase interventistica critica</li>
+            <li>Ottimizzazione del posizionamento del paziente (Trendelenburg) per migliorare la qualità delle immagini CO₂</li>
+            <li>Utilizzo di software di post-processing DSA specifici per CO₂</li>
+            <li>Nei casi davvero complessi: valutare il rapporto rischio/beneficio con il nefrologo e documentare la scelta</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Quanti ml di CO₂ si possono iniettare in totale per sessione?</summary>
+        <div class="faq-ans">Non esiste un limite assoluto standardizzato, perché la CO₂ viene rapidamente eliminata dai polmoni. La pratica clinica comune prevede iniezioni di 20–60 ml ciascuna, con pause di 1–2 minuti tra le iniezioni per garantire la clearance polmonare. I sistemi di iniezione automatica digitale tracciano i volumi in tempo reale e possono impostare limiti di sicurezza configurabili dall'operatore.</div>
+      </details>
+    </div>
+
+  </div><!-- end tab-spec -->
+
+  <!-- CTA STRUTTURE -->
+  <div class="cta-card" id="strutture">
+    <h3>🏥 In Italia oltre 100 strutture usano già la CO₂</h3>
+    <p>Sei un medico che vuole sapere dove indirizzare il paziente, o uno specialista che vuole informazioni sui sistemi di iniezione automatica CO₂? Scrivici.</p>
+    <a href="mailto:scrivi@angiodroid.com" class="btn">Scrivi a scrivi@angiodroid.com</a>
+    <span class="note">Rispondiamo con informazioni sulla struttura più vicina o sui sistemi disponibili in Italia</span>
+  </div>
+
+</div><!-- end content -->
+
+<footer>
+  <div class="ft">
+    <div>
+      <div class="ft-logo">ACDA Academy</div>
+      <div style="margin-top:.3rem;font-size:.78rem;">Automated Carbon Dioxide Angiography</div>
+    </div>
+    <div class="ft-links">
+      <a href="/">Home</a>
+      <a href="paziente.html">Per i pazienti</a>
+      <a href="mailto:scrivi@angiodroid.com">Contatto</a>
+    </div>
+  </div>
+  <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e clinico-informativo. Non sostituiscono la valutazione clinica individuale del paziente. Fare sempre riferimento alle linee guida aggiornate e alla propria valutazione professionale.</div>
+</footer>
+
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guida per il paziente: angiografia, mezzo di contrasto e alternativa CO₂ | ACDA Academy</title>
+  <meta name="description" content="Tutto quello che devi sapere se devi fare un'angiografia: cos'è, come si svolge, i rischi del mezzo di contrasto iodato per i reni e l'alternativa sicura con CO₂. Spiegato in modo semplice.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acda-academy.com/paziente.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Cos'è l'angiografia?", "acceptedAnswer": {"@type": "Answer", "text": "L'angiografia è un esame che serve a vedere le arterie e le vene del corpo usando raggi X e un mezzo di contrasto. Permette di individuare ostruzioni, stenosi o malformazioni dei vasi sanguigni."}},
+      {"@type": "Question", "name": "Il mezzo di contrasto fa male ai reni?", "acceptedAnswer": {"@type": "Answer", "text": "Il mezzo di contrasto iodato può danneggiare i reni, specialmente in pazienti con diabete, insufficienza renale o età avanzata. Esiste un'alternativa sicura: l'angiografia con CO₂."}},
+      {"@type": "Question", "name": "Cos'è l'angiografia con CO₂?", "acceptedAnswer": {"@type": "Answer", "text": "L'angiografia con CO₂ usa anidride carbonica invece del mezzo di contrasto iodato. La CO₂ non ha tossicità renale ed è eliminata naturalmente dai polmoni in pochi minuti."}},
+      {"@type": "Question", "name": "Dove si fa l'angiografia con CO₂ in Italia?", "acceptedAnswer": {"@type": "Answer", "text": "In Italia ci sono oltre 100 strutture equipaggiate con tecnologia per l'angiografia con CO₂. Per trovare la struttura più vicina puoi scrivere a scrivi@angiodroid.com."}}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --teal:       #00677F;
+      --teal-light: #58C5C0;
+      --teal-dark:  #00363B;
+      --orange:     #EF7D00;
+      --sand:       #DEDCD2;
+      --black:      #111111;
+      --white:      #ffffff;
+      --text:       #1a1a1a;
+      --muted:      #4a5a63;
+      --border:     #d0d8dc;
+      --bg:         #f4f6f6;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; font-size: 16px; }
+
+    /* HEADER */
+    header { background: var(--white); border-bottom: 2px solid var(--teal); padding: 0 1.25rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .04em; }
+    .logo span { color: var(--teal-light); }
+    .back-link { font-size: .82rem; font-weight: 600; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .05em; }
+    .back-link:hover { color: var(--orange); }
+
+    /* HERO */
+    .hero { background: var(--teal-dark); color: white; padding: 3.5rem 1.25rem 3rem; }
+    .hero-inner { max-width: 800px; margin: 0 auto; }
+    .breadcrumb { font-size: .75rem; color: rgba(255,255,255,.5); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--teal-light); text-decoration: none; }
+    .tag { display: inline-block; background: rgba(88,197,192,.2); border: 1px solid rgba(88,197,192,.35); border-radius: 2px; padding: .22rem .8rem; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 700; text-transform: uppercase; letter-spacing: .02em; line-height: 1.1; margin-bottom: 1rem; }
+    .hero h1 span { color: var(--teal-light); }
+    .hero p { font-size: 1rem; color: rgba(255,255,255,.75); font-weight: 300; line-height: 1.7; max-width: 620px; }
+
+    /* JUMP NAV */
+    .jump-nav { background: var(--sand); border-bottom: 1px solid rgba(0,103,127,.15); padding: .9rem 1.25rem; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+    .jump-nav-inner { max-width: 800px; margin: 0 auto; display: flex; gap: .5rem; }
+    .jump-nav a { display: inline-block; padding: .4rem .9rem; border-radius: 100px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; text-decoration: none; color: var(--teal); border: 1.5px solid var(--teal); white-space: nowrap; transition: background .15s, color .15s; }
+    .jump-nav a:hover { background: var(--teal); color: white; }
+
+    /* CONTENT */
+    .content { max-width: 800px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+
+    /* SECTION BLOCKS */
+    .block { margin-bottom: 3rem; }
+    .block-label { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); margin-bottom: .4rem; }
+    h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--teal-dark); margin-bottom: .75rem; line-height: 1.15; }
+    h3 { font-size: 1rem; font-weight: 700; color: var(--teal-dark); margin: 1.25rem 0 .4rem; }
+    p { color: var(--muted); margin-bottom: .75rem; font-size: .97rem; line-height: 1.75; }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); }
+
+    /* STEPS */
+    .steps { list-style: none; margin: 1rem 0; }
+    .steps li { display: flex; gap: 1rem; align-items: flex-start; padding: .9rem 0; border-bottom: 1px solid var(--border); }
+    .steps li:last-child { border-bottom: none; }
+    .step-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--teal); color: white; font-weight: 700; font-size: .85rem; display: flex; align-items: center; justify-content: center; margin-top: .1rem; }
+    .step-text { font-size: .93rem; color: var(--muted); line-height: 1.65; }
+    .step-text strong { display: block; color: var(--text); margin-bottom: .2rem; }
+
+    /* INFO BOX */
+    .info-box { background: rgba(0,103,127,.06); border-left: 3px solid var(--teal); border-radius: 0 6px 6px 0; padding: 1rem 1.1rem; margin: 1.25rem 0; font-size: .9rem; color: var(--teal-dark); line-height: 1.65; }
+    .info-box.orange { background: rgba(239,125,0,.07); border-color: var(--orange); color: var(--text); }
+    .info-box.green { background: rgba(88,197,192,.1); border-color: var(--teal-light); }
+
+    /* WARNING CARD */
+    .warn-card { background: rgba(239,125,0,.08); border: 1px solid rgba(239,125,0,.3); border-radius: 6px; padding: 1.1rem 1.2rem; margin: 1.25rem 0; }
+    .warn-card h4 { font-size: .88rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .5rem; }
+    .warn-card ul { list-style: disc; padding-left: 1.2rem; }
+    .warn-card li { font-size: .9rem; color: var(--muted); padding: .2rem 0; line-height: 1.55; }
+
+    /* CHECK LIST */
+    .check-list { list-style: none; margin: .75rem 0; }
+    .check-list li { display: flex; gap: .75rem; align-items: flex-start; padding: .45rem 0; font-size: .93rem; color: var(--muted); border-bottom: 1px solid var(--border); line-height: 1.55; }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list li .ic { flex-shrink: 0; color: var(--teal); font-weight: 700; margin-top: .05rem; }
+    .check-list li .ic.warn { color: var(--orange); }
+
+    /* COMPARE TABLE */
+    .compare { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .88rem; }
+    .compare th { background: var(--teal-dark); color: white; padding: .75rem .9rem; text-align: left; font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+    .compare th:first-child { border-radius: 6px 0 0 0; }
+    .compare th:last-child { border-radius: 0 6px 0 0; }
+    .compare td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: top; line-height: 1.5; }
+    .compare tr:last-child td { border-bottom: none; }
+    .compare tr:nth-child(even) td { background: var(--bg); }
+    .compare td:first-child { font-weight: 600; color: var(--text); }
+    .good { color: var(--teal) !important; font-weight: 700 !important; }
+    .bad { color: var(--orange) !important; }
+
+    /* CTA CARD */
+    .cta-card { background: var(--teal-dark); color: white; border-radius: 8px; padding: 1.75rem 1.5rem; margin: 2rem 0; text-align: center; }
+    .cta-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: white; margin-bottom: .5rem; margin-top: 0; }
+    .cta-card p { color: rgba(255,255,255,.75); font-size: .92rem; margin-bottom: 1.25rem; }
+    .cta-card a.btn { display: inline-block; background: var(--orange); color: white; padding: .75rem 1.6rem; border-radius: 3px; text-decoration: none; font-weight: 700; font-size: .87rem; text-transform: uppercase; letter-spacing: .04em; }
+    .cta-card a.btn:hover { background: #d06e00; }
+    .cta-card .email-link { display: block; margin-top: .75rem; font-size: .85rem; color: var(--teal-light); text-decoration: none; }
+
+    /* FAQ */
+    .faq-block { background: var(--sand); border-radius: 8px; padding: 1.5rem 1.25rem; margin: 2rem 0; }
+    .faq-block h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+    details { border: 1px solid rgba(0,103,127,.15); border-left: 3px solid var(--teal); border-radius: 2px; margin-bottom: .6rem; background: white; }
+    summary { padding: .95rem 1.1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: var(--teal-dark); gap: .75rem; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--teal); flex-shrink: 0; font-weight: 300; transition: transform .2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details[open] summary { color: var(--teal); }
+    .faq-ans { padding: .85rem 1.1rem 1.1rem; border-top: 1px solid var(--border); font-size: .88rem; color: var(--muted); line-height: 1.75; }
+
+    /* DIVIDER */
+    .divider { border: none; border-top: 2px solid var(--sand); margin: 2.5rem 0; }
+
+    /* FOOTER */
+    footer { background: var(--black); color: rgba(255,255,255,.5); padding: 2rem 1.25rem 1.25rem; font-size: .83rem; margin-top: 3rem; }
+    .ft { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 1rem; }
+    .ft-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--teal-light); text-transform: uppercase; }
+    .ft-links { display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
+    .ft-links a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .82rem; }
+    .ft-links a:hover { color: var(--teal-light); }
+    .ft-disc { max-width: 800px; margin: 0 auto; color: rgba(255,255,255,.28); font-size: .76rem; line-height: 1.6; }
+
+    @media (max-width: 500px) {
+      .compare { font-size: .8rem; }
+      .compare th, .compare td { padding: .55rem .65rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ACDA <span>Academy</span></a>
+    <a href="/" class="back-link">← Home</a>
+  </div>
+</header>
+
+<!-- JUMP NAV -->
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <a href="#cosé">Cos'è</a>
+    <a href="#come-si-fa">Come si fa</a>
+    <a href="#rischi">Rischi</a>
+    <a href="#chi-rischia">Chi rischia</a>
+    <a href="#co2">CO₂</a>
+    <a href="#prima">Prima dell'esame</a>
+    <a href="#domande">Domande</a>
+    <a href="#strutture">Dove farla</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a> › Guida per il paziente</div>
+    <div class="tag">👤 Per il paziente e la famiglia</div>
+    <h1>Angiografia: <span>guida completa</span> per il paziente</h1>
+    <p>Cos'è, come si fa, i rischi del mezzo di contrasto iodato per i reni e l'alternativa sicura con CO₂ — spiegato in modo semplice, senza tecnicismi.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- COS'È -->
+  <div class="block" id="cosé">
+    <span class="block-label">Punto di partenza</span>
+    <h2>Cos'è l'angiografia e a cosa serve?</h2>
+    <p>L'angiografia è un esame medico che serve a vedere dall'interno le arterie e le vene del corpo. Permette ai medici di individuare ostruzioni, restringimenti (stenosi), aneurismi o malformazioni dei vasi sanguigni — problemi che una normale TAC o ecografia non sempre riesce a mostrare con sufficiente dettaglio.</p>
+    <p>È usata soprattutto per studiare le arterie delle gambe (arterie degli arti inferiori), le arterie del cuore (coronarografia), le arterie renali, quelle dell'addome e dell'aorta.</p>
+
+    <h3>In cosa è diversa da una TAC o da una risonanza magnetica?</h3>
+    <ul class="check-list">
+      <li><span class="ic">→</span><span><strong>TAC con contrasto:</strong> usa raggi X e mezzo di contrasto iodato iniettato in una vena del braccio. L'esame dura pochi minuti e non richiede accesso ai vasi.</span></li>
+      <li><span class="ic">→</span><span><strong>Risonanza magnetica:</strong> usa campi magnetici, non usa raggi X. Il mezzo di contrasto (gadolinio) è diverso da quello iodato e ha un profilo di rischio renale differente.</span></li>
+      <li><span class="ic">→</span><span><strong>Angiografia:</strong> più specifica e precisa per i vasi. Richiede un piccolo accesso attraverso la pelle (solitamente all'inguine o al polso) e permette di intervenire direttamente — non solo fotografare.</span></li>
+    </ul>
+
+    <div class="info-box">💡 <strong>Importante:</strong> solo l'angiografia permette di fare diagnosi e trattamento nello stesso momento — ad esempio aprire un'arteria ostruita (angioplastica) o posizionare uno stent.</div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- COME SI FA -->
+  <div class="block" id="come-si-fa">
+    <span class="block-label">Passo dopo passo</span>
+    <h2>Come si svolge un'angiografia? Fa male?</h2>
+    <p>L'angiografia viene eseguita da un medico specialista — un <strong>radiologo interventista</strong> o un <strong>chirurgo vascolare</strong> — in una sala operatoria o angiografica attrezzata.</p>
+
+    <ul class="steps">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Preparazione</strong> Ti viene inserita una flebo e ti vengono monitorati pressione e battito cardiaco. L'area di accesso (solitamente l'inguine) viene disinfettata e preparata.</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Anestesia locale</strong> Viene iniettato un anestetico locale nella zona di accesso — simile a quello del dentista. Sentirai un pizzico iniziale, poi l'area diventa insensibile.</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Inserimento del catetere</strong> Attraverso una piccola puntura, viene inserito un sottilissimo tubicino flessibile (catetere) nell'arteria. Non si sente dolore perché l'area è anestetizzata.</div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Iniezione del mezzo di contrasto</strong> Viene iniettato il mezzo di contrasto (iodato o CO₂) attraverso il catetere. Puoi avvertire una sensazione di calore o lieve fastidio, ma non dolore intenso.</div>
+      </li>
+      <li>
+        <div class="step-num">5</div>
+        <div class="step-text"><strong>Acquisizione delle immagini</strong> Raggi X speciali fotografano i vasi in tempo reale — il mezzo di contrasto li rende visibili. Il medico vede tutto su monitor durante la procedura.</div>
+      </li>
+      <li>
+        <div class="step-num">6</div>
+        <div class="step-text"><strong>Fine e recupero</strong> Il catetere viene rimosso e il punto di accesso viene compresso manualmente per qualche minuto. Si rimane sdraiati per alcune ore prima di poter alzarsi.</div>
+      </li>
+    </ul>
+
+    <div class="info-box green">
+      <strong>Quanto dura?</strong> Da 30 minuti a 2 ore a seconda della complessità. Per un'angiografia diagnostica semplice si torna spesso a casa in giornata. Per interventi terapeutici (angioplastica, stent) può essere necessario un ricovero di 1–2 giorni.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- RISCHI -->
+  <div class="block" id="rischi">
+    <span class="block-label">Quello che devi sapere</span>
+    <h2>Il mezzo di contrasto iodato può danneggiare i reni?</h2>
+    <p>Sì — ed è la cosa più importante da sapere prima di fare un'angiografia o una TAC con contrasto.</p>
+    <p>Il <strong>mezzo di contrasto iodato</strong> viene filtrato dai reni ed eliminato con le urine. In alcuni pazienti questo processo affatica troppo i reni e può causare un danno renale acuto, chiamato in medicina <strong>AKI</strong> (Acute Kidney Injury) o <strong>nefropatia da mezzo di contrasto</strong>.</p>
+
+    <div class="warn-card">
+      <h4>⚠ Possibili conseguenze del danno renale da contrasto</h4>
+      <ul>
+        <li>Peggioramento temporaneo o permanente della funzione renale</li>
+        <li>Necessità di dialisi nei casi più gravi</li>
+        <li>Ricovero ospedaliero prolungato</li>
+        <li>Nelle persone già con reni compromessi: ulteriore riduzione della funzione residua</li>
+      </ul>
+    </div>
+
+    <p>Oltre al rischio renale, il mezzo di contrasto iodato può causare <strong>reazioni allergiche</strong> — da lievi (prurito, arrossamento) fino a gravi (difficoltà respiratorie). Se hai già avuto una reazione in passato, segnalalo sempre prima dell'esame.</p>
+
+    <div class="info-box orange">
+      ⚠ <strong>Se hai già avuto reazioni al mezzo di contrasto</strong>, all'iodio o ai frutti di mare, parla con il medico prima dell'esame. Potrebbe essere indicata una pre-medicazione o, meglio ancora, un'alternativa come la CO₂.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CHI RISCHIA -->
+  <div class="block" id="chi-rischia">
+    <span class="block-label">La tua situazione</span>
+    <h2>Chi è più a rischio di danno renale da contrasto?</h2>
+    <p>Non tutti i pazienti hanno lo stesso rischio. Alcune condizioni aumentano significativamente la probabilità che il mezzo di contrasto iodato danneggi i reni:</p>
+
+    <ul class="check-list">
+      <li><span class="ic warn">⚠</span><span><strong>Insufficienza renale cronica (IRC)</strong> — soprattutto con GFR inferiore a 60, e ancora di più sotto 30</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Diabete mellito</strong> — aumenta il rischio anche quando i reni sembrano ancora nella norma</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Età avanzata</strong> — la funzione renale tende a ridursi con l'età anche senza una diagnosi formale</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Disidratazione</strong> — essere poco idratati al momento dell'esame amplifica il danno</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Uso di FANS o metformina</strong> — questi farmaci aumentano il rischio di danno renale in combinazione con il contrasto</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Arteriopatia periferica</strong> — chi ha problemi alle arterie delle gambe spesso ha anche i reni compromessi</span></li>
+      <li><span class="ic warn">⚠</span><span><strong>Scompenso cardiaco o disidratazione</strong> — riducono il flusso di sangue ai reni</span></li>
+    </ul>
+
+    <div class="info-box">
+      💡 <strong>La combinazione più rischiosa</strong> è: <strong>diabete + insufficienza renale + arteriopatia periferica</strong>. Se hai queste tre condizioni insieme, chiedi esplicitamente al tuo medico se è possibile usare la CO₂ invece del mezzo di contrasto iodato.
+    </div>
+
+    <h3>Come si misura il rischio? La creatinina e il GFR</h3>
+    <p>Il tuo medico valuterà la tua funzione renale attraverso un semplice esame del sangue. I parametri da conoscere sono:</p>
+    <ul class="check-list">
+      <li><span class="ic">→</span><span><strong>Creatinina:</strong> un prodotto di scarto che i reni devono filtrare. Se è alta, i reni lavorano meno bene.</span></li>
+      <li><span class="ic">→</span><span><strong>GFR (o eGFR):</strong> la velocità di filtrazione glomerulare — indica quanta funzione renale hai ancora. Sopra 60 è nella norma; sotto 30 è rischio elevato.</span></li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CO2 -->
+  <div class="block" id="co2">
+    <span class="block-label">L'alternativa sicura</span>
+    <h2>L'angiografia con CO₂: cos'è e perché è più sicura per i reni?</h2>
+    <p>La <strong>CO₂ (anidride carbonica)</strong> può essere usata come mezzo di contrasto alternativo al liquido iodato durante un'angiografia. Invece di un liquido, viene iniettato un gas — la stessa CO₂ che il tuo corpo produce naturalmente ogni giorno e che espiri respirando.</p>
+
+    <h3>Come funziona?</h3>
+    <p>La CO₂, essendo un gas, assorbe i raggi X in modo diverso dal sangue e permette di vedere i vasi sanguigni nelle immagini. La procedura è identica all'angiografia tradizionale: stesso catetere, stesso accesso, stessa sala. Cambia solo il mezzo di contrasto iniettato.</p>
+    <p>La CO₂ viene eliminata in pochi minuti attraverso i polmoni, semplicemente respirando — senza nessun coinvolgimento dei reni.</p>
+
+    <table class="compare">
+      <thead>
+        <tr>
+          <th>Caratteristica</th>
+          <th>Mezzo di contrasto iodato</th>
+          <th>Angiografia con CO₂</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Tossicità renale</td><td class="bad">Sì — rischio AKI</td><td class="good">No — zero tossicità renale</td></tr>
+        <tr><td>Reazioni allergiche</td><td class="bad">Possibili</td><td class="good">Nessuna</td></tr>
+        <tr><td>Eliminazione</td><td>Dai reni (urine)</td><td class="good">Dai polmoni (respirazione)</td></tr>
+        <tr><td>Sicurezza con IRC</td><td class="bad">Rischio elevato</td><td class="good">Sicura anche con GFR basso</td></tr>
+        <tr><td>Sicurezza con diabete</td><td class="bad">Rischio aumentato</td><td class="good">Sicura</td></tr>
+        <tr><td>Anni di utilizzo clinico</td><td>Decenni</td><td class="good">Oltre 30 anni</td></tr>
+        <tr><td>Costo</td><td>Più alto</td><td class="good">Inferiore</td></tr>
+      </tbody>
+    </table>
+
+    <h3>È una tecnica sperimentale?</h3>
+    <p><strong>No.</strong> L'angiografia con CO₂ è utilizzata clinicamente da oltre 30 anni nei centri specializzati di tutto il mondo. È raccomandata dalle principali linee guida internazionali di radiologia interventistica e chirurgia vascolare per i pazienti ad alto rischio renale.</p>
+    <p>In Italia ci sono <strong>oltre 100 strutture ospedaliere</strong> già equipaggiate con la tecnologia per eseguire angiografie con CO₂.</p>
+
+    <h3>Ha controindicazioni?</h3>
+    <p>La CO₂ è indicata principalmente per le angiografie degli arti inferiori, dell'aorta e dell'addome. Ha alcune limitazioni tecniche per le procedure sopra il diaframma (ad esempio le coronarie). Il tuo medico specialista saprà dirti se è indicata per il tuo caso specifico.</p>
+
+    <div class="info-box green">
+      💡 <strong>Come chiederla al medico:</strong> puoi dire semplicemente — <em>"Ho letto che esiste l'angiografia con CO₂ che è più sicura per i reni. È possibile usarla nel mio caso?"</em>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- PRIMA DELL'ESAME -->
+  <div class="block" id="prima">
+    <span class="block-label">Cosa fare</span>
+    <h2>Prima e dopo l'esame: le cose pratiche da sapere</h2>
+
+    <h3>Prima dell'angiografia</h3>
+    <ul class="check-list">
+      <li><span class="ic">✓</span><span>Fai un esame del sangue recente con <strong>creatinina e GFR</strong> — il medico deve conoscere la tua funzione renale</span></li>
+      <li><span class="ic">✓</span><span>Comunica tutti i <strong>farmaci che stai prendendo</strong>, specialmente metformina, FANS, diuretici e anticoagulanti</span></li>
+      <li><span class="ic">✓</span><span>Segnala eventuali <strong>allergie</strong>, specialmente allo iodio o a mezzi di contrasto precedenti</span></li>
+      <li><span class="ic">✓</span><span><strong>Idratati bene</strong> nei giorni precedenti — bevi acqua a sufficienza</span></li>
+      <li><span class="ic">✓</span><span>Chiedi se devi sospendere la <strong>metformina</strong> (per i diabetici) nelle 48h prima dell'esame</span></li>
+      <li><span class="ic">✓</span><span>Chiedi esplicitamente se è possibile usare la <strong>CO₂ invece del mezzo di contrasto iodato</strong></span></li>
+    </ul>
+
+    <h3>Dopo l'angiografia</h3>
+    <ul class="check-list">
+      <li><span class="ic">✓</span><span><strong>Bevi molta acqua</strong> nelle 24–48h successive per aiutare i reni a eliminare il mezzo di contrasto</span></li>
+      <li><span class="ic">✓</span><span>Resta sdraiato per il tempo indicato dal medico dopo la procedura (di solito 2–4 ore)</span></li>
+      <li><span class="ic">✓</span><span>Monitora il punto di accesso: piccoli lividi sono normali, ma segnala subito gonfiore o sanguinamento</span></li>
+      <li><span class="ic">✓</span><span>Se hai usato mezzo di contrasto iodato, fai un <strong>controllo della creatinina</strong> dopo 24–48h</span></li>
+      <li><span class="ic">✓</span><span>Non guidare nelle 12–24h successive se hai ricevuto sedativi</span></li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FAQ -->
+  <div class="block" id="domande">
+    <span class="block-label">Hai ancora dubbi?</span>
+    <h2>Le domande più frequenti</h2>
+
+    <details>
+      <summary>Posso fare un'angiografia se ho la creatinina alta?</summary>
+      <div class="faq-ans">Sì, ma richiede una valutazione attenta. Creatinina alta significa che i reni sono più vulnerabili al mezzo di contrasto iodato. In questi casi molti medici scelgono di usare la CO₂ come alternativa sicura, oppure adottano misure preventive come un'idratazione endovenosa prima e dopo la procedura. La decisione dipende dal valore esatto del tuo GFR e dal tipo di procedura necessaria.</div>
+    </details>
+
+    <details>
+      <summary>Il gas CO₂ nelle arterie è pericoloso?</summary>
+      <div class="faq-ans">È la preoccupazione più comune, ed è comprensibile. La risposta è no — se usata correttamente con sistemi automatici certificati. La CO₂ è il gas che il tuo corpo produce naturalmente ogni giorno in grandi quantità. Nelle angiografie viene usata in piccole dosi controllate e viene eliminata rapidamente dai polmoni in pochi minuti. I sistemi moderni di iniezione automatica garantiscono controllo preciso di volumi e pressioni, rendendo la procedura sicura.</div>
+    </details>
+
+    <details>
+      <summary>Angiografia con CO₂: è disponibile nel mio ospedale?</summary>
+      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a href="mailto:scrivi@angiodroid.com" style="color:var(--teal)">scrivi@angiodroid.com</a> per sapere qual è la struttura più vicina a te che la esegue.</div>
+    </details>
+
+    <details>
+      <summary>Mia mamma ha 78 anni e deve fare un'angiografia — che rischi corre?</summary>
+      <div class="faq-ans">L'età avanzata è uno dei principali fattori di rischio per la nefropatia da contrasto, anche in assenza di una diagnosi formale di insufficienza renale. Prima dell'esame è fondamentale fare un controllo della creatinina e del GFR. Se il GFR è sotto 60, chiedete al medico di valutare l'angiografia con CO₂. Se è sotto 30, la CO₂ è spesso la scelta raccomandata.</div>
+    </details>
+
+    <details>
+      <summary>Ho paura dell'ago e della procedura. È normale?</summary>
+      <div class="faq-ans">Assolutamente sì, ed è una delle preoccupazioni più comuni. L'angiografia viene eseguita in anestesia locale: il punto di accesso viene reso insensibile prima di qualsiasi manovra. Non si avverte dolore durante la procedura, al massimo una sensazione di pressione o calore. Se sei molto ansioso, parla con il medico prima: in alcuni casi può essere somministrato un leggero sedativo.</div>
+    </details>
+
+    <details>
+      <summary>Sono diabetico e prendo metformina — devo smettere prima dell'esame?</summary>
+      <div class="faq-ans">Sì, se si usa il mezzo di contrasto iodato. La metformina in combinazione con il mezzo di contrasto può aumentare il rischio di una condizione chiamata acidosi lattica. Di solito si sospende nelle 48h prima e si riprende 48h dopo l'esame, dopo aver verificato che la funzione renale sia rimasta stabile. Se si usa la CO₂ invece del contrasto iodato, questa precauzione non è necessaria.</div>
+    </details>
+  </div>
+
+  <!-- CTA STRUTTURE -->
+  <div class="cta-card" id="strutture">
+    <h3>🏥 Vuoi sapere dove fare l'angiografia con CO₂?</h3>
+    <p>In Italia ci sono oltre 100 strutture già equipaggiate. Scrivici e ti diciamo qual è quella più vicina a te o ti forniamo ulteriori informazioni.</p>
+    <a href="mailto:scrivi@angiodroid.com" class="btn">Scrivi a scrivi@angiodroid.com</a>
+    <a href="/" class="email-link">← Torna alla home</a>
+  </div>
+
+</div><!-- end content -->
+
+<footer>
+  <div class="ft">
+    <div>
+      <div class="ft-logo">ACDA Academy</div>
+      <div style="margin-top:.3rem;font-size:.78rem;">Automated Carbon Dioxide Angiography</div>
+    </div>
+    <div class="ft-links">
+      <a href="/">Home</a>
+      <a href="medico.html">Per i medici</a>
+      <a href="mailto:scrivi@angiodroid.com">Contatto</a>
+    </div>
+  </div>
+  <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
+</footer>
+
+</body>
+</html>
