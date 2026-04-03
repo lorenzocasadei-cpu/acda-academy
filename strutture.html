@@ -170,13 +170,16 @@
 
 <div class="main">
 
-  <!-- MAP -->
-  <div class="map-wrap">
-    <span class="map-label">Copertura geografica</span>
+  <!-- INTRO -->
+  <div style="margin-bottom:2rem;">
+    <span style="display:block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem;">Copertura geografica</span>
     <h2>La CO₂ è disponibile in tutta Italia</h2>
-    <p class="map-intro">La tecnologia per l'angiografia con CO₂ è presente in strutture pubbliche e private in tutte le regioni italiane. La copertura è più densa al Nord, in crescita al Centro e progressivamente in espansione al Sud e nelle isole.</p>
+    <p style="color:var(--muted);font-size:.95rem;line-height:1.7;margin-top:.5rem;">La tecnologia per l'angiografia con CO₂ è presente in strutture pubbliche e private in tutte le regioni italiane. La copertura è più densa al Nord, in crescita al Centro e progressivamente in espansione al Sud e nelle isole. Scrivici per sapere qual è la struttura più vicina a te.</p>
+  </div>
 
-    <div class="map-container">
+  <hr class="divider">
+
+  <div class="map-container" style="display:none">
       <!-- SVG Map of Italy with coverage coloring -->
       <svg viewBox="0 0 400 580" xmlns="http://www.w3.org/2000/svg" aria-label="Mappa Italia con copertura angiografia CO2">
         <defs>
@@ -256,56 +259,11 @@
     </div>
   </div>
 
-  <!-- REGIONS LIST -->
-  <div class="regions">
-    <h3>Copertura per area geografica</h3>
-
-    <div class="region-group">
-      <div class="region-group-title">🟢 Nord — Alta copertura</div>
-      <div class="region-tags">
-        <span class="rtag high"><span class="dot"></span>Lombardia</span>
-        <span class="rtag high"><span class="dot"></span>Veneto</span>
-        <span class="rtag high"><span class="dot"></span>Piemonte</span>
-        <span class="rtag high"><span class="dot"></span>Emilia Romagna</span>
-        <span class="rtag high"><span class="dot"></span>Trentino-Alto Adige</span>
-        <span class="rtag high"><span class="dot"></span>Friuli Venezia Giulia</span>
-        <span class="rtag high"><span class="dot"></span>Liguria</span>
-        <span class="rtag high"><span class="dot"></span>Valle d'Aosta</span>
-      </div>
-    </div>
-
-    <div class="region-group">
-      <div class="region-group-title">🔵 Centro — Buona copertura</div>
-      <div class="region-tags">
-        <span class="rtag med"><span class="dot"></span>Toscana</span>
-        <span class="rtag med"><span class="dot"></span>Lazio</span>
-        <span class="rtag med"><span class="dot"></span>Marche</span>
-        <span class="rtag med"><span class="dot"></span>Umbria</span>
-        <span class="rtag med"><span class="dot"></span>Abruzzo</span>
-        <span class="rtag med"><span class="dot"></span>Molise</span>
-      </div>
-    </div>
-
-    <div class="region-group">
-      <div class="region-group-title">⚪ Sud e Isole — In espansione</div>
-      <div class="region-tags">
-        <span class="rtag low"><span class="dot"></span>Campania</span>
-        <span class="rtag low"><span class="dot"></span>Puglia</span>
-        <span class="rtag low"><span class="dot"></span>Calabria</span>
-        <span class="rtag low"><span class="dot"></span>Basilicata</span>
-        <span class="rtag low"><span class="dot"></span>Sicilia</span>
-        <span class="rtag low"><span class="dot"></span>Sardegna</span>
-      </div>
-    </div>
-  </div>
-
-  <hr class="divider">
-
   <!-- CTA MAIN -->
   <div class="cta-main" id="contatto">
     <h2>Scrivici: ti diciamo la struttura più vicina a te</h2>
     <p>Indica nella email la tua <strong>città o provincia</strong> e, se vuoi, la tua situazione clinica. Ti risponderemo entro <strong>24–48 ore</strong> con il nome della struttura più vicina che esegue angiografie con CO₂ e, dove possibile, il contatto del reparto.</p>
-    <a href="mailto:scrivi@angiodroid.com?subject=Richiesta%20struttura%20angiografia%20CO2&body=Salve%2C%0A%0Aabito%20a%20[citt%C3%A0%2Fprovincia]%20e%20vorrei%20sapere%20qual%20%C3%A8%20la%20struttura%20pi%C3%B9%20vicina%20a%20me%20che%20esegue%20angiografie%20con%20CO%E2%82%82.%0A%0AGrazie" class="email-btn">✉ Scrivi a scrivi@angiodroid.com</a>
+    <a href="/cdn-cgi/l/email-protection#0172627368776841606f66686e65736e68652f626e6c3e7274636b6462753c536862696864727560243331727573747575747360243331606f66686e667360676860243331424e3327636e65783c52606d7764243342243140243140606368756e243331602433315a6268757524423224403124334771736e77686f6268605c24333164243331776e737364682433317260716473642433317074606d2433312442322440392433316d602433317275737475757473602433317168244232244338243331776862686f60243331602433316c64243331626964243331647264667464243331606f66686e667360676864243331626e6f243331424e2444332439332439332f2431402431404673607b6864" class="email-btn">✉ Scrivi a <span class="__cf_email__" data-cfemail="740717061d021d34151a131d1b10061b1d105a171b19">[email&#160;protected]</span></a>
     <span class="email-note">Risposta entro 24–48 ore · Servizio gratuito · Nessun obbligo</span>
   </div>
 
@@ -315,7 +273,7 @@
     <ul class="steps">
       <li>
         <div class="step-num">1</div>
-        <div class="step-text"><strong>Scrivi una email</strong> a scrivi@angiodroid.com indicando la tua città o provincia e, se vuoi, un breve cenno alla tua situazione (es. "devo fare un'angiografia alle gambe, ho i reni affaticati").</div>
+        <div class="step-text"><strong>Scrivi una email</strong> a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="deadbdacb7a8b79ebfb0b9b7b1baacb1b7baf0bdb1b3">[email&#160;protected]</a> indicando la tua città o provincia e, se vuoi, un breve cenno alla tua situazione (es. "devo fare un'angiografia alle gambe, ho i reni affaticati").</div>
       </li>
       <li>
         <div class="step-num">2</div>
@@ -357,7 +315,7 @@
 
     <details>
       <summary>Sono un medico — come faccio a sapere se una struttura vicina ai miei pazienti è equipaggiata?</summary>
-      <div class="faq-ans">Scrivici a <a href="mailto:scrivi@angiodroid.com">scrivi@angiodroid.com</a> indicando la provincia di riferimento dei tuoi pazienti. Possiamo anche fornirti materiale informativo da condividere con i pazienti che richiedono un'alternativa al mezzo di contrasto iodato.</div>
+      <div class="faq-ans">Scrivici a <a href="/cdn-cgi/l/email-protection#afdcccddc6d9c6efcec1c8c6c0cbddc0c6cb81ccc0c2"><span class="__cf_email__" data-cfemail="90e3f3e2f9e6f9d0f1fef7f9fff4e2fff9f4bef3fffd">[email&#160;protected]</span></a> indicando la provincia di riferimento dei tuoi pazienti. Possiamo anche fornirti materiale informativo da condividere con i pazienti che richiedono un'alternativa al mezzo di contrasto iodato.</div>
     </details>
   </div>
 
@@ -374,19 +332,4 @@
 
 <footer>
   <div class="ft">
-    <div>
-      <div class="ft-logo">ACDA Academy</div>
-      <div style="margin-top:.3rem;font-size:.78rem;">Automated Carbon Dioxide Angiography</div>
-    </div>
-    <div class="ft-links">
-      <a href="/">Home</a>
-      <a href="paziente.html">Pazienti</a>
-      <a href="medico.html">Medici</a>
-      <a href="mailto:scrivi@angiodroid.com">Contatto</a>
-    </div>
-  </div>
-  <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
-</footer>
-
-</body>
-</html>
+   
