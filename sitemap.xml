@@ -3,4 +3,5 @@
   <url><loc>https://acda-academy.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://acda-academy.com/paziente.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://acda-academy.com/medico.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://acda-academy.com/strutture.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
