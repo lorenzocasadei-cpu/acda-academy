@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acda-academy.com/sitemap.xml
