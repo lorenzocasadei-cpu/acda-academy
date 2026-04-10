@@ -245,6 +245,18 @@
       </ul>
 
       <div class="info-box orange">⚠ <strong>La triade ad altissimo rischio:</strong> diabete + CKD stadio 3b–4 + arteriopatia periferica. In questi pazienti il mezzo di contrasto iodato dovrebbe essere evitato ogni volta che esiste un'alternativa praticabile come la CO₂.</div>
+
+      <!-- FONTI -->
+      <div style="background:var(--bg);border-radius:6px;padding:1rem 1.1rem;margin-top:1.5rem;font-size:.82rem;color:var(--muted);line-height:1.7;">
+        <strong style="color:var(--text);display:block;margin-bottom:.5rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;">📚 Fonti e riferimenti scientifici</strong>
+        <ol style="padding-left:1.2rem;">
+          <li style="margin-bottom:.4rem;">Mehran R, et al. <em>A Simple Risk Score for Prediction of Contrast-Induced Nephropathy.</em> J Am Coll Cardiol. 2004. <a href="https://pubmed.ncbi.nlm.nih.gov/15336985/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.4rem;">Weisbord SD, et al. <em>Contrast-Associated Acute Kidney Injury.</em> N Engl J Med. 2019. <a href="https://pubmed.ncbi.nlm.nih.gov/30779732/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.4rem;">Bartholomew BA, et al. <em>Impact of Nephropathy After Percutaneous Coronary Intervention.</em> Am J Cardiol. 2004. <a href="https://pubmed.ncbi.nlm.nih.gov/15196125/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.4rem;">Kooiman J, et al. <em>Systematic Review: CO₂ Angiography as an Alternative to Iodinated Contrast.</em> Eur J Vasc Endovasc Surg. 2013. <a href="https://pubmed.ncbi.nlm.nih.gov/23453388/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li>Hamaya H, et al. <em>CO₂ Digital Subtraction Angiography.</em> J Vasc Interv Radiol. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/32081594/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+        </ol>
+      </div>
     </div>
 
     <hr class="divider">
@@ -462,13 +474,11 @@
       </details>
     </div>
 
-  </div><!-- end tab-spec -->
-
   <!-- CTA STRUTTURE -->
   <div class="cta-card" id="strutture">
     <h3>🏥 In Italia oltre 100 strutture usano già la CO₂</h3>
-    <p>Sei un medico che vuole sapere dove indirizzare il paziente, o uno specialista che vuole informazioni sui sistemi di iniezione automatica CO₂? Scrivici.</p>
-    <a href="mailto:scrivi@angiodroid.com" class="btn">Scrivi a scrivi@angiodroid.com</a>
+    <p>Sei un medico che vuole sapere dove indirizzare il paziente, o uno specialista che vuole informazioni sui sistemi <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong>? Scrivici.</p>
+    <a class="btn elink" href="#" data-label="✉ Scrivi a scrivi@angiodroid.com">✉ Caricamento...</a>
     <span class="note">Rispondiamo con informazioni sulla struttura più vicina o sui sistemi disponibili in Italia</span>
   </div>
 
@@ -483,20 +493,32 @@
     <div class="ft-links">
       <a href="/">Home</a>
       <a href="paziente.html">Per i pazienti</a>
-      <a href="mailto:scrivi@angiodroid.com">Contatto</a>
+      <a href="strutture.html">Trova struttura</a>
+      <a class="elink" href="#" data-label="Contatto email">Contatto</a>
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e clinico-informativo. Non sostituiscono la valutazione clinica individuale del paziente. Fare sempre riferimento alle linee guida aggiornate e alla propria valutazione professionale.</div>
 </footer>
 
 <script>
-  function showTab(id, btn) {
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-    document.getElementById('tab-' + id).classList.add('active');
-    btn.classList.add('active');
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  var u = 'scrivi'; var d = 'angiodroid.com';
+  var email = u + '@' + d;
+  document.querySelectorAll('.elink').forEach(function(el) {
+    var label = el.getAttribute('data-label') || ('✉ ' + email);
+    el.href = 'mailto:' + email;
+    el.textContent = label;
+  });
+  document.querySelectorAll('.espan').forEach(function(el) {
+    el.textContent = email;
+  });
+});
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
 </script>
-
 </body>
 </html>

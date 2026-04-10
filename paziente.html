@@ -390,7 +390,7 @@
 
     <details>
       <summary>Angiografia con CO₂: è disponibile nel mio ospedale?</summary>
-      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a href="mailto:scrivi@angiodroid.com" style="color:var(--teal)">scrivi@angiodroid.com</a> per sapere qual è la struttura più vicina a te che la esegue.</div>
+      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a class="elink" href="#" data-label="scrivi@angiodroid.com" style="color:var(--teal)">scrivi@angiodroid.com</a> per sapere qual è la struttura più vicina a te che la esegue.</div>
     </details>
 
     <details>
@@ -409,12 +409,13 @@
     </details>
   </div>
 
+
   <!-- CTA STRUTTURE -->
   <div class="cta-card" id="strutture">
     <h3>🏥 Vuoi sapere dove fare l'angiografia con CO₂?</h3>
-    <p>In Italia ci sono oltre 100 strutture già equipaggiate. Scrivici e ti diciamo qual è quella più vicina a te o ti forniamo ulteriori informazioni.</p>
-    <a href="mailto:scrivi@angiodroid.com" class="btn">Scrivi a scrivi@angiodroid.com</a>
-    <a href="/" class="email-link">← Torna alla home</a>
+    <p>In Italia ci sono oltre 100 strutture già equipaggiate con la tecnologia <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong>. Scrivici e ti diciamo qual è quella più vicina a te.</p>
+    <a class="btn elink" href="#" data-label="✉ Scrivi a scrivi@angiodroid.com">✉ Caricamento...</a>
+    <a href="strutture.html" class="email-link">Scopri dove siamo presenti in Italia →</a>
   </div>
 
 </div><!-- end content -->
@@ -428,11 +429,15 @@
     <div class="ft-links">
       <a href="/">Home</a>
       <a href="medico.html">Per i medici</a>
-      <a href="mailto:scrivi@angiodroid.com">Contatto</a>
+      <a href="strutture.html">Trova struttura</a>
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
 </footer>
 
-</body>
-</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var u = 'scrivi'; var d = 'angiodroid.com';
+  var email = u + '@' + d;
+  document.querySelectorAll('.elink').forEach(function(el) {
+    var label = el.getAttribute('data-label') || ('✉ '

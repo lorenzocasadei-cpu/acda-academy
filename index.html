@@ -341,7 +341,7 @@
   <div class="inner">
     <span class="eyebrow">Automated Carbon Dioxide Angiography</span>
     <h2>Perché la CO₂ cambia tutto<br>per i pazienti a rischio</h2>
-    <p class="lead">La CO₂ è un mezzo di contrasto alternativo al mezzo iodato, usato in angiografia da oltre 30 anni e sempre più diffuso nei centri specializzati di radiologia interventistica.</p>
+    <p class="lead">La CO₂ è un mezzo di contrasto alternativo al mezzo iodato, usato in angiografia da oltre 30 anni e sempre più diffuso nei centri specializzati di radiologia interventistica. In Italia la tecnologia di riferimento è <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong>, presente in oltre 100 strutture ospedaliere.</p>
     <div class="cmp">
       <div class="cmp-box good">
         <h3>✅ Angiografia con CO₂</h3>
@@ -395,7 +395,8 @@
       <a href="#faq">FAQ</a>
       <a href="#co2">CO₂</a>
       <a href="medico.html">Medici</a>
-      <a href="/cdn-cgi/l/email-protection#661505140f100f260708010f090214090f024805090b">Contatto</a>
+      <a href="strutture.html">Trova struttura</a>
+      <a class="elink" href="#" data-label="Contatto email">Contatto</a>
     </div>
   </div>
   <div class="ft-disc">
@@ -403,6 +404,25 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  function showTab(id, btn) {
-    document.query
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var u = 'scrivi'; var d = 'angiodroid.com';
+  var email = u + '@' + d;
+  document.querySelectorAll('.elink').forEach(function(el) {
+    var label = el.getAttribute('data-label') || ('✉ ' + email);
+    el.href = 'mailto:' + email;
+    el.textContent = label;
+  });
+  document.querySelectorAll('.espan').forEach(function(el) {
+    el.textContent = email;
+  });
+});
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
