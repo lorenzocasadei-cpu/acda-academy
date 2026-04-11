@@ -157,6 +157,15 @@
       .compare, .risk-table { font-size: .78rem; }
       .compare th, .compare td, .risk-table th, .risk-table td { padding: .5rem .6rem; }
     }
+  
+    .email-block{text-align:center;margin-top:.5rem}
+    .btn-gmail{display:inline-block;background:var(--orange);color:white;padding:.9rem 2rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:.95rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s,transform .15s}
+    .btn-gmail:hover{background:#d06e00;transform:translateY(-1px)}
+    .email-plain{margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
+    .email-addr{color:var(--teal-light);font-weight:600;letter-spacing:.02em}
+    .copy-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:white;padding:.2rem .65rem;border-radius:3px;cursor:pointer;font-size:.78rem;font-weight:600;font-family:'Barlow',sans-serif;transition:background .15s}
+    .copy-btn:hover{background:rgba(255,255,255,.22)}
+    .copy-btn.copied{background:var(--teal);border-color:var(--teal)}
   </style>
 </head>
 <body>
@@ -478,8 +487,14 @@
   <div class="cta-card" id="strutture">
     <h3>🏥 In Italia oltre 100 strutture usano già la CO₂</h3>
     <p>Sei un medico che vuole sapere dove indirizzare il paziente, o uno specialista che vuole informazioni sui sistemi <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong>? Scrivici.</p>
-    <a class="btn elink" href="#" data-label="✉ Scrivi a scrivi@angiodroid.com">✉ Caricamento...</a>
-    <span class="note">Rispondiamo con informazioni sulla struttura più vicina o sui sistemi disponibili in Italia</span>
+    <div class="email-block">
+    <a class="btn-gmail" href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener">✉ Scrivici una email</a>
+    <div class="email-plain">
+      oppure copia l'indirizzo: <span class="email-addr">scrivi@angiodroid.com</span>
+      <button class="copy-btn" onclick="copyEmail(this)">Copia</button>
+    </div>
+  </div>
+    <span style="display:block;margin-top:.75rem;font-size:.82rem;color:rgba(255,255,255,.55);">Rispondiamo con informazioni sulla struttura più vicina o sui sistemi disponibili in Italia</span>
   </div>
 
 </div><!-- end content -->
@@ -494,7 +509,7 @@
       <a href="/">Home</a>
       <a href="paziente.html">Per i pazienti</a>
       <a href="strutture.html">Trova struttura</a>
-      <a class="elink" href="#" data-label="Contatto email">Contatto</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem;">Contatto email</a>
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e clinico-informativo. Non sostituiscono la valutazione clinica individuale del paziente. Fare sempre riferimento alle linee guida aggiornate e alla propria valutazione professionale.</div>
@@ -502,22 +517,21 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  var u = 'scrivi'; var d = 'angiodroid.com';
-  var email = u + '@' + d;
-  document.querySelectorAll('.elink').forEach(function(el) {
-    var label = el.getAttribute('data-label') || ('✉ ' + email);
-    el.href = 'mailto:' + email;
-    el.textContent = label;
-  });
-  document.querySelectorAll('.espan').forEach(function(el) {
-    el.textContent = email;
-  });
+  
+  
 });
 function showTab(id, btn) {
   document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
   document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
+}
+
+function copyEmail(btn){
+  navigator.clipboard.writeText('scrivi@angiodroid.com').then(function(){
+    btn.textContent='Copiato ✓'; btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent='Copia'; btn.classList.remove('copied'); }, 2000);
+  });
 }
 </script>
 </body>

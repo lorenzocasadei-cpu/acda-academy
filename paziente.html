@@ -151,6 +151,15 @@
       .compare { font-size: .8rem; }
       .compare th, .compare td { padding: .55rem .65rem; }
     }
+  
+    .email-block{text-align:center;margin-top:.5rem}
+    .btn-gmail{display:inline-block;background:var(--orange);color:white;padding:.9rem 2rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:.95rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s,transform .15s}
+    .btn-gmail:hover{background:#d06e00;transform:translateY(-1px)}
+    .email-plain{margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
+    .email-addr{color:var(--teal-light);font-weight:600;letter-spacing:.02em}
+    .copy-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:white;padding:.2rem .65rem;border-radius:3px;cursor:pointer;font-size:.78rem;font-weight:600;font-family:'Barlow',sans-serif;transition:background .15s}
+    .copy-btn:hover{background:rgba(255,255,255,.22)}
+    .copy-btn.copied{background:var(--teal);border-color:var(--teal)}
   </style>
 </head>
 <body>
@@ -390,7 +399,7 @@
 
     <details>
       <summary>Angiografia con CO₂: è disponibile nel mio ospedale?</summary>
-      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a class="elink" href="#" data-label="scrivi@angiodroid.com" style="color:var(--teal)">scrivi@angiodroid.com</a> per sapere qual è la struttura più vicina a te che la esegue.</div>
+      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a class="elink" href="#" data-label="scrivi@angiodroid.com" style="color:var(--teal)"><span class="__cf_email__" data-cfemail="196a7a6b706f705978777e70767d6b76707d377a7674">[email&#160;protected]</span></a> per sapere qual è la struttura più vicina a te che la esegue.</div>
     </details>
 
     <details>
@@ -435,9 +444,12 @@
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
 </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var u = 'scrivi'; var d = 'angiodroid.com';
-  var email = u + '@' + d;
-  document.querySelectorAll('.elink').forEach(function(el) {
-    var label = el.getAttribute('data-label') || ('✉ '
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+function copyEmail(btn){
+  navigator.clipboard.writeText('scrivi@angiodroid.com').then(function(){
+    btn.textContent='Copiato ✓'; btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent='Copia'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script><script>
+document.addEventListener('DOMContentLoaded', 

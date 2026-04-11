@@ -76,6 +76,15 @@
     .ft-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem}
     .ft-links a:hover{color:var(--teal-light)}
     .ft-disc{max-width:700px;margin:0 auto;color:rgba(255,255,255,.28);font-size:.76rem;line-height:1.6}
+  
+    .email-block{text-align:center;margin-top:.5rem}
+    .btn-gmail{display:inline-block;background:var(--orange);color:white;padding:.9rem 2rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:.95rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s,transform .15s}
+    .btn-gmail:hover{background:#d06e00;transform:translateY(-1px)}
+    .email-plain{margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
+    .email-addr{color:var(--teal-light);font-weight:600;letter-spacing:.02em}
+    .copy-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:white;padding:.2rem .65rem;border-radius:3px;cursor:pointer;font-size:.78rem;font-weight:600;font-family:'Barlow',sans-serif;transition:background .15s}
+    .copy-btn:hover{background:rgba(255,255,255,.22)}
+    .copy-btn.copied{background:var(--teal);border-color:var(--teal)}
   </style>
 </head>
 <body>
@@ -124,8 +133,14 @@
   <div class="cta-main" id="contatto">
     <h2>Scrivici: ti diciamo la struttura più vicina a te</h2>
     <p>Indica nella email la tua <strong>città o provincia</strong> e, se vuoi, la tua situazione clinica. Ti risponderemo entro <strong>24–48 ore</strong> con il nome della struttura più vicina che esegue angiografie con CO₂ e, dove possibile, il contatto del reparto.</p>
-    <a class="email-btn elink" href="#" data-label="✉ Scrivi a scrivi@angiodroid.com">✉ Caricamento...</a>
-    <span class="email-note">Risposta entro 24–48 ore · Servizio gratuito · Nessun obbligo</span>
+    <div class="email-block">
+    <a class="btn-gmail" href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener">✉ Scrivici una email</a>
+    <div class="email-plain">
+      oppure copia l'indirizzo: <span class="email-addr">scrivi@angiodroid.com</span>
+      <button class="copy-btn" onclick="copyEmail(this)">Copia</button>
+    </div>
+  </div>
+    <span style="display:block;margin-top:.75rem;font-size:.82rem;color:rgba(255,255,255,.5);">Risposta entro 24–48 ore · Servizio gratuito · Nessun obbligo</span>
   </div>
 
   <!-- HOW IT WORKS -->
@@ -134,7 +149,7 @@
     <ul class="steps">
       <li>
         <div class="step-num">1</div>
-        <div class="step-text"><strong>Scrivi una email</strong> Contattaci all'indirizzo <span class="espan" style="font-weight:600;color:var(--teal)"></span> indicando la tua città o provincia e, se vuoi, un breve cenno alla tua situazione (es. "devo fare un'angiografia alle gambe, ho i reni affaticati").</div>
+        <div class="step-text"><strong>Scrivi una email</strong> Contattaci all'indirizzo <span style="font-weight:600;color:var(--teal)">scrivi@angiodroid.com</span> indicando la tua città o provincia e, se vuoi, un breve cenno alla tua situazione (es. "devo fare un'angiografia alle gambe, ho i reni affaticati").</div>
       </li>
       <li>
         <div class="step-num">2</div>
@@ -199,25 +214,23 @@
       <a href="/">Home</a>
       <a href="paziente.html">Pazienti</a>
       <a href="medico.html">Medici</a>
-      <a href="#contatto" class="elink" data-label="Contatto email">Contatto</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem;">Contatto email</a>
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
 </footer>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var u = 'scrivi'; var d = 'angiodroid.com';
-  var email = u + '@' + d;
-  document.querySelectorAll('.elink').forEach(function(el) {
-    var label = el.getAttribute('data-label') || ('✉ ' + email);
-    el.href = 'mailto:' + email;
-    el.textContent = label;
-  });
-  document.querySelectorAll('.espan').forEach(function(el) {
-    el.textContent = email;
-  });
+
+  
 });
+
+function copyEmail(btn){
+  navigator.clipboard.writeText('scrivi@angiodroid.com').then(function(){
+    btn.textContent='Copiato ✓'; btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent='Copia'; btn.classList.remove('copied'); }, 2000);
+  });
+}
 </script>
 </body>
 </html>
