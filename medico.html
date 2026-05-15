@@ -182,12 +182,12 @@
 
 <div class="jump-nav">
   <div class="jump-nav-inner">
-    <a href="#rischio">Rischio renale</a>
-    <a href="#indicazioni">Indicazioni CO₂</a>
-    <a href="#protocollo">Protocollo</a>
-    <a href="#costi">Costi</a>
-    <a href="#mmg">Medico di base</a>
-    <a href="#specialista">Specialista</a>
+    <a href="#mmg" onclick="activateTab('mmg')">Medico di base</a>
+    <a href="#rischio" onclick="activateTab('mmg')">Rischio renale</a>
+    <a href="#indicazioni" onclick="activateTab('mmg')">Indicazioni CO₂</a>
+    <a href="#protocollo" onclick="activateTab('spec')">Protocollo</a>
+    <a href="#costi" onclick="activateTab('spec')">Costi</a>
+    <a href="#specialista" onclick="activateTab('spec')">Specialista</a>
     <a href="#strutture">Strutture</a>
   </div>
 </div>
@@ -552,6 +552,18 @@ function showTab(id, btn) {
   document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
   document.getElementById('tab-' + id).classList.add('active');
   btn.classList.add('active');
+}
+
+function activateTab(id) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  var btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(function(btn) {
+    if (btn.getAttribute('onclick') && btn.getAttribute('onclick').indexOf("'" + id + "'") !== -1) {
+      btn.classList.add('active');
+    }
+  });
 }
 
 function copyEmail(btn){
