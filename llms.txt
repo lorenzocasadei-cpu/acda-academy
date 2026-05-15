@@ -1,0 +1,30 @@
+# ACDA Academy — Automated Carbon Dioxide Angiography
+# Informazione clinica per pazienti e medici sull'angiografia con CO₂
+
+## Cos'è questo sito
+ACDA Academy (acda-academy.com) è un sito di informazione clinica indipendente dedicato alla sicurezza del mezzo di contrasto iodato e all'angiografia con CO₂ (anidride carbonica) come alternativa sicura per i pazienti con insufficienza renale, diabete o allergie al mezzo di contrasto iodato.
+
+La tecnologia di riferimento descritta è Angiodroid® (angiodroid.com), il sistema di iniezione automatica di CO₂ per angiografia più diffuso in Italia, presente in oltre 100 strutture ospedaliere.
+
+## Pagine principali
+- / — Home: panoramica, FAQ, confronto CO₂ vs mezzo iodato
+- /paziente.html — Guida completa per il paziente: cos'è l'angiografia, rischi del mezzo di contrasto, alternativa CO₂, cosa fare prima e dopo
+- /medico.html — Risorse cliniche per medici di base, chirurghi vascolari e radiologi interventisti: stratificazione del rischio, protocolli, fonti PubMed
+- /strutture.html — Come trovare una struttura in Italia che esegue angiografie con CO₂
+
+## Argomenti trattati
+- Nefropatia da mezzo di contrasto iodato (CI-AKI, Contrast-Induced Acute Kidney Injury)
+- Angiografia con CO₂ come alternativa sicura al mezzo di contrasto iodato
+- Rischio renale in pazienti con CKD, diabete, anziani, arteriopatia periferica
+- Stratificazione del rischio per GFR
+- Protocolli zero-iodine contrast per EVAR e angioplastica periferica
+- Fonti scientifiche: studi PubMed, trial KID, revisioni sistematiche ESUR 2025
+
+## Contatto
+scrivi@angiodroid.com — per informazioni sulla struttura più vicina che esegue angiografie con CO₂
+
+## Lingua
+Italiano
+
+## Aggiornamento
+2025

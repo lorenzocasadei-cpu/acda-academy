@@ -21,7 +21,10 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"></noscript>
 
   <style>
     :root {
@@ -514,7 +517,7 @@
     <div class="email-block">
     <a class="btn-gmail" href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener">✉ Scrivici una email</a>
     <div class="email-plain">
-      oppure copia l'indirizzo: <span class="email-addr"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="463525342f302f062728212f292234292f226825292b">[email&#160;protected]</a></span>
+      oppure copia l'indirizzo: <span class="email-addr">scrivi@angiodroid.com</span>
       <button class="copy-btn" onclick="copyEmail(this)">Copia</button>
     </div>
   </div>
@@ -539,7 +542,7 @@
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e clinico-informativo. Non sostituiscono la valutazione clinica individuale del paziente. Fare sempre riferimento alle linee guida aggiornate e alla propria valutazione professionale.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
   
   

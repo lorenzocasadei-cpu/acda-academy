@@ -22,7 +22,10 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"></noscript>
 
   <style>
     :root {
@@ -399,7 +402,7 @@
 
     <details>
       <summary>Angiografia con CO₂: è disponibile nel mio ospedale?</summary>
-      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <a class="elink" href="#" data-label="scrivi@angiodroid.com" style="color:var(--teal)"><span class="__cf_email__" data-cfemail="196a7a6b706f705978777e70767d6b76707d377a7674">[email&#160;protected]</span></a> per sapere qual è la struttura più vicina a te che la esegue.</div>
+      <div class="faq-ans">In Italia ci sono già oltre 100 strutture equipaggiate con la tecnologia per eseguire angiografie con CO₂. Non tutte le strutture la offrono, ma la rete è in continua espansione. Puoi scrivere a <strong>scrivi@angiodroid.com</strong> per sapere qual è la struttura più vicina a te che la esegue.</div>
     </details>
 
     <details>
@@ -423,8 +426,14 @@
   <div class="cta-card" id="strutture">
     <h3>🏥 Vuoi sapere dove fare l'angiografia con CO₂?</h3>
     <p>In Italia ci sono oltre 100 strutture già equipaggiate con la tecnologia <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong>. Scrivici e ti diciamo qual è quella più vicina a te.</p>
-    <a class="btn elink" href="#" data-label="✉ Scrivi a scrivi@angiodroid.com">✉ Caricamento...</a>
-    <a href="strutture.html" class="email-link">Scopri dove siamo presenti in Italia →</a>
+    <div class="email-block">
+    <a class="btn-gmail" href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Richiesta%20informazioni%20angiografia%20CO2" target="_blank" rel="noopener">✉ Scrivici una email</a>
+    <div class="email-plain">
+      oppure copia l'indirizzo: <span class="email-addr">scrivi@angiodroid.com</span>
+      <button class="copy-btn" onclick="copyEmail(this)">Copia</button>
+    </div>
+  </div>
+    <a href="strutture.html" style="display:block;margin-top:.75rem;font-size:.85rem;color:var(--teal-light);text-decoration:none;">Scopri dove siamo presenti in Italia →</a>
   </div>
 
 </div><!-- end content -->
@@ -444,7 +453,7 @@
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista. Prima di qualsiasi procedura medica, consulta sempre il tuo medico.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+
 function copyEmail(btn){
   navigator.clipboard.writeText('scrivi@angiodroid.com').then(function(){
     btn.textContent='Copiato ✓'; btn.classList.add('copied');

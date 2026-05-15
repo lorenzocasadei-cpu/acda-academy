@@ -15,19 +15,82 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "ACDA Academy",
-    "description": "Informazioni per pazienti e medici sulla nefropatia da mezzo di contrasto iodato e sull'angiografia con CO₂ come alternativa sicura",
-    "url": "https://acda-academy.com",
-    "inLanguage": "it",
-    "about": {"@type": "MedicalCondition", "name": "Nefropatia da mezzo di contrasto"},
-    "audience": {"@type": "MedicalAudience", "audienceType": "Pazienti e medici"}
-  }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il mezzo di contrasto usato per TAC e angiografia fa male ai reni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Il mezzo di contrasto iodato può causare nefropatia da contrasto (CI-AKI). Il rischio è basso nei pazienti con reni sani (1–5%) ma sale fino al 50% nei pazienti ad alto rischio (diabete + insufficienza renale cronica). Esiste un'alternativa sicura: l'angiografia con CO₂, priva di tossicità renale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'angiografia alle gambe è pericolosa per anziani con diabete e problemi ai reni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, è una delle situazioni a maggior rischio. In questi pazienti molti centri usano la CO₂ come mezzo di contrasto alternativo: un gas prodotto naturalmente dall'organismo, senza tossicità renale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cos'è l'angiografia con CO₂ e come funziona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'angiografia con CO₂ usa anidride carbonica invece del mezzo di contrasto iodato. La procedura è identica a quella tradizionale, ma la CO₂ viene eliminata naturalmente dai polmoni in pochi minuti senza coinvolgere i reni. È utilizzata clinicamente da oltre 30 anni ed è raccomandata dalle linee guida per i pazienti con insufficienza renale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'angiografia con CO₂ è sicura o è sperimentale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non è sperimentale. L'angiografia con CO₂ è utilizzata in medicina da oltre 30 anni ed è raccomandata dalle principali linee guida internazionali di radiologia interventistica per i pazienti ad alto rischio renale. In Italia ci sono oltre 100 strutture già equipaggiate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dove si fa l'angiografia con CO₂ in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Italia ci sono oltre 100 strutture ospedaliere equipaggiate con la tecnologia per l'angiografia con CO₂. Per trovare la struttura più vicina puoi scrivere a scrivi@angiodroid.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa l'angiografia con CO₂ rispetto al mezzo di contrasto iodato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il costo della CO₂ come mezzo di contrasto è inferiore a quello del mezzo iodato tradizionale. Per il paziente il costo dell'esame non cambia: quando eseguita in una struttura convenzionata è a carico del SSN come l'angiografia tradizionale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Che controlli devo fare prima di un'angiografia con mezzo di contrasto iodato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prima dell'esame il medico deve verificare: creatinina e GFR (analisi del sangue), stato di idratazione, farmaci in corso (metformina, FANS, diuretici), eventuali allergie al mezzo di contrasto e presenza di diabete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa fare dopo un'angiografia con mezzo di contrasto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dopo l'angiografia con mezzo di contrasto iodato: bere molta acqua nelle 24–48h successive, restare in osservazione per il tempo indicato dal medico, fare un controllo della creatinina dopo 24–48h, monitorare il punto di accesso per eventuali gonfiori o sanguinamenti."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"></noscript>
 
   <style>
     :root {
@@ -339,6 +402,42 @@
           <p><strong>Fa male?</strong> La procedura avviene in anestesia locale. Si può avvertire una sensazione di calore o lieve fastidio durante l'iniezione del contrasto, ma non dolore intenso.</p>
           <p style="margin-top:.5rem;"><strong>Quanto dura?</strong> Da 30 minuti a 2 ore, a seconda della complessità.</p>
           <p style="margin-top:.5rem;"><strong>Ricovero?</strong> Per un'angiografia diagnostica semplice si torna spesso a casa in giornata dopo alcune ore di osservazione. Per procedure terapeutiche (angioplastica, stent) può essere necessario restare 1–2 giorni.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Quanto costa l'angiografia con CO₂? È diversa dal mezzo di contrasto tradizionale?</summary>
+        <div class="faq-body">
+          <p>Per il paziente il costo dell'esame non cambia: quando eseguita in una struttura convenzionata con il SSN, l'angiografia con CO₂ è rimborsata esattamente come quella tradizionale.</p>
+          <p style="margin-top:.5rem;">Dal punto di vista ospedaliero, il costo della CO₂ come mezzo di contrasto è <strong>inferiore</strong> a quello del mezzo iodato tradizionale. In più, riducendo il rischio di danno renale acuto (AKI), evita i costi aggiuntivi legati a degenze prolungate e dialisi d'urgenza — con un risparmio stimato significativo per i centri che la adottano sistematicamente.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Ci sono studi scientifici che confrontano la CO₂ con il mezzo di contrasto iodato?</summary>
+        <div class="faq-body">
+          <p>Sì, la letteratura scientifica è ampia e in forte crescita. Tra i più rilevanti:</p>
+          <ul style="list-style:disc;padding-left:1.2rem;margin-top:.5rem;">
+            <li>Uno studio multicentrico prospettico italiano (Chisci et al., <em>Eur J Vasc Endovasc Surg</em> 2025) su 293 pazienti ha dimostrato fattibilità e sicurezza del protocollo zero-iodine in oltre l'80% dei casi.</li>
+            <li>Una revisione sistematica dell'ESUR (Wawer Matos Reimer et al., <em>European Radiology</em> 2025) ha confermato il profilo di sicurezza della CO₂ come agente di contrasto vascolare alternativo.</li>
+            <li>Il <strong>KID Trial</strong> (Saratzis et al., <em>BMJ Open</em> 2025) è il primo trial randomizzato controllato in corso specificamente disegnato per valutare la prevenzione del danno renale con CO₂.</li>
+          </ul>
+          <p style="margin-top:.6rem;">Per le fonti complete con link PubMed, consulta la <a href="medico.html#rischio" style="color:var(--teal);font-weight:600;">sezione medici →</a></p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Cosa fare dopo un'angiografia? Come ci si prende cura di sé a casa?</summary>
+        <div class="faq-body">
+          <p><strong>Nelle prime 24–48 ore:</strong></p>
+          <ul style="list-style:disc;padding-left:1.2rem;margin-top:.4rem;">
+            <li>Bere abbondante acqua per aiutare i reni a eliminare il mezzo di contrasto (se iodato)</li>
+            <li>Restare a riposo per il tempo indicato, evitare sforzi fisici intensi</li>
+            <li>Tenere sotto controllo il punto di accesso: piccoli lividi sono normali, ma segnalare subito gonfiore, sanguinamento o dolore crescente</li>
+            <li>Non guidare nelle 12–24h successive se si è ricevuto un sedativo</li>
+          </ul>
+          <p style="margin-top:.6rem;"><strong>Se hai usato mezzo di contrasto iodato:</strong> esegui un controllo della creatinina dopo 24–48h, specialmente se sei a rischio renale. Se hai il diabete e prendi metformina, aspetta il via libera del medico prima di riprenderla.</p>
+          <p style="margin-top:.5rem;"><strong>Con CO₂:</strong> il follow-up è più semplice — non essendoci rischio renale da contrasto, non è necessario il controllo della creatinina post-procedurale specifico per il mezzo di contrasto.</p>
         </div>
       </details>
 
