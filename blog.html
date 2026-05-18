@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog ACDA Academy – Angiografia, CO₂ e sicurezza renale</title>
+  <meta name="description" content="Articoli e guide su angiografia, mezzo di contrasto iodato, protezione renale e alternativa CO₂. Per pazienti, familiari e medici.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acda-academy.com/blog.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "ACDA Academy Blog",
+    "description": "Articoli su angiografia, mezzo di contrasto iodato e alternativa CO₂",
+    "url": "https://acda-academy.com/blog.html",
+    "inLanguage": "it",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ACDA Academy",
+      "url": "https://acda-academy.com"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"></noscript>
+  <style>
+    :root {
+      --teal:#00677F; --teal-light:#58C5C0; --teal-dark:#00363B;
+      --orange:#EF7D00; --sand:#DEDCD2; --black:#111111;
+      --white:#ffffff; --text:#1a1a1a; --muted:#4a5a63;
+      --border:#d0d8dc; --bg:#f4f6f6;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);line-height:1.65;font-size:16px}
+    header{background:var(--white);border-bottom:2px solid var(--teal);padding:0 1.25rem;position:sticky;top:0;z-index:100}
+    .header-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+    .logo{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:var(--teal);text-decoration:none;text-transform:uppercase;letter-spacing:.04em}
+    .logo span{color:var(--teal-light)}
+    nav a{color:var(--muted);text-decoration:none;padding:.4rem .8rem;font-size:.87rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;border-radius:3px;transition:color .15s,background .15s}
+    nav a:hover{color:var(--teal);background:rgba(0,103,127,.07)}
+    nav a.active{color:var(--teal)}
+
+    .hero{background:var(--teal-dark);color:white;padding:3rem 1.25rem 2.5rem}
+    .hero-inner{max-width:900px;margin:0 auto}
+    .breadcrumb{font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:.75rem}
+    .breadcrumb a{color:var(--teal-light);text-decoration:none}
+    .hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1.1;margin-bottom:.75rem}
+    .hero p{font-size:.97rem;color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;max-width:620px}
+
+    .main{max-width:900px;margin:0 auto;padding:2.5rem 1.25rem}
+
+    /* FILTER TABS */
+    .filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+    .filter-btn{padding:.35rem .9rem;border-radius:100px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border:1.5px solid var(--border);background:white;color:var(--muted);cursor:pointer;transition:all .15s;font-family:'Barlow',sans-serif}
+    .filter-btn:hover,.filter-btn.active{background:var(--teal);border-color:var(--teal);color:white}
+
+    /* ARTICLE GRID */
+    .articles{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+    .article-card{border:1px solid var(--border);border-top:3px solid var(--teal-light);border-radius:4px;background:white;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+    .article-card:hover{box-shadow:0 6px 22px rgba(0,103,127,.1);transform:translateY(-2px)}
+    .article-card.featured{border-top-color:var(--orange);grid-column:1/-1}
+    @media(min-width:700px){.article-card.featured{display:grid;grid-template-columns:1fr 1fr;gap:0}}
+    .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+    .card-meta{display:flex;gap:.5rem;align-items:center;margin-bottom:.75rem;flex-wrap:wrap}
+    .tag{display:inline-block;padding:.18rem .65rem;border-radius:100px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    .tag.paziente{background:rgba(88,197,192,.15);color:#007a6e}
+    .tag.medico{background:rgba(0,103,127,.12);color:var(--teal)}
+    .tag.caregiver{background:rgba(239,125,0,.12);color:var(--orange)}
+    .card-date{font-size:.75rem;color:var(--muted)}
+    .card-body h2{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:var(--teal-dark);margin-bottom:.5rem;line-height:1.2}
+    .article-card.featured .card-body h2{font-size:clamp(1.2rem,2.5vw,1.6rem)}
+    .card-body p{font-size:.88rem;color:var(--muted);line-height:1.6;flex:1}
+    .card-link{display:inline-block;margin-top:1rem;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--teal);text-decoration:none}
+    .card-link:hover{color:var(--orange)}
+    .card-img{background:linear-gradient(135deg,var(--teal-dark),var(--teal));min-height:160px;display:flex;align-items:center;justify-content:center;border-radius:0 0 0 4px}
+    .card-img-icon{font-size:4rem;opacity:.35}
+
+    /* NEWSLETTER / CTA */
+    .cta-blog{background:var(--sand);border-radius:8px;padding:1.75rem 1.5rem;margin:2.5rem 0;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+    .cta-blog-text h3{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;color:var(--teal-dark);margin-bottom:.3rem}
+    .cta-blog-text p{font-size:.88rem;color:var(--muted);line-height:1.6}
+    .btn-teal{display:inline-block;background:var(--teal);color:white;padding:.7rem 1.4rem;border-radius:3px;text-decoration:none;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;transition:background .2s}
+    .btn-teal:hover{background:var(--teal-dark)}
+
+    footer{background:var(--black);color:rgba(255,255,255,.5);padding:2rem 1.25rem 1.25rem;font-size:.83rem;margin-top:2rem}
+    .ft{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap;padding-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1rem}
+    .ft-logo{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;color:var(--teal-light);text-transform:uppercase}
+    .ft-links{display:flex;gap:1.25rem;flex-wrap:wrap;align-items:center}
+    .ft-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem}
+    .ft-links a:hover{color:var(--teal-light)}
+    .ft-disc{max-width:900px;margin:0 auto;color:rgba(255,255,255,.28);font-size:.76rem;line-height:1.6}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">ACDA <span>Academy</span></a>
+    <nav>
+      <a href="paziente.html">Pazienti</a>
+      <a href="medico.html">Medici</a>
+      <a href="strutture.html">Strutture</a>
+      <a href="blog.html" class="active">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a> › Blog</div>
+    <h1>Guide e approfondimenti su<br>angiografia e sicurezza renale</h1>
+    <p>Articoli per pazienti, familiari e medici su angiografia, mezzo di contrasto iodato, protezione renale e alternativa CO₂.</p>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterArticles('all', this)">Tutti</button>
+    <button class="filter-btn" onclick="filterArticles('paziente', this)">👤 Paziente</button>
+    <button class="filter-btn" onclick="filterArticles('caregiver', this)">👨‍👩‍👧 Famiglia</button>
+    <button class="filter-btn" onclick="filterArticles('medico', this)">🩺 Medico</button>
+  </div>
+
+  <div class="articles" id="articles-grid">
+
+    <!-- ARTICOLO 1 — FEATURED -->
+    <article class="article-card featured" data-cat="paziente caregiver">
+      <div class="card-img"><div class="card-img-icon">🩻</div></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag paziente">Paziente</span>
+          <span class="tag caregiver">Famiglia</span>
+          <span class="card-date">Giugno 2025</span>
+        </div>
+        <h2>Angiografia: cosa succede prima, durante e dopo (e come ridurre il contrasto iodato)</h2>
+        <p>Guida completa per chi deve sottoporsi a un'angiografia: preparazione, cosa si sente in sala, recupero a casa. Con una sezione dedicata alle strategie contrast-sparing e alla CO₂ per chi ha reni fragili o allergie al mezzo di contrasto iodato.</p>
+        <a href="blog/angiografia-prima-durante-dopo-contrast-sparing.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- ARTICOLO 2 -->
+    <article class="article-card" data-cat="caregiver">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag caregiver">Famiglia</span>
+          <span class="card-date">Giugno 2025</span>
+        </div>
+        <h2>Angiografia con CO₂: quanto si risparmia in giorni di ricovero e costi</h2>
+        <p>Per famiglie e caregiver: come l'angiografia con CO₂ può ridurre il rischio di complicanze renali e limitare degenze prolungate. Con domande pratiche da fare al medico e FAQ.</p>
+        <a href="blog/angiografia-con-co2-risparmio-costi-giorni-ricovero.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- PLACEHOLDER per articoli futuri -->
+    <article class="article-card" data-cat="medico" style="opacity:.45;pointer-events:none">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag medico">Medico</span>
+          <span class="card-date">Prossimamente</span>
+        </div>
+        <h2>Il KID Trial: primo RCT sulla CO₂ per la prevenzione del danno renale</h2>
+        <p>Analisi del protocollo del primo trial randomizzato controllato specificamente disegnato per valutare la CO₂ nella prevenzione della nefropatia da contrasto.</p>
+        <span class="card-link">In arrivo →</span>
+      </div>
+    </article>
+
+    <article class="article-card" data-cat="paziente" style="opacity:.45;pointer-events:none">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag paziente">Paziente</span>
+          <span class="card-date">Prossimamente</span>
+        </div>
+        <h2>Diabete e angiografia: come proteggere i reni prima e dopo l'esame</h2>
+        <p>Guida pratica per i pazienti diabetici che devono fare un'angiografia: cosa sapere sulla metformina, il GFR e le alternative al mezzo di contrasto iodato.</p>
+        <span class="card-link">In arrivo →</span>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="cta-blog">
+    <div class="cta-blog-text">
+      <h3>Hai una domanda su angiografia o CO₂?</h3>
+      <p>Scrivici per sapere dove fare un'angiografia con CO₂ nella tua area o per avere informazioni cliniche.</p>
+    </div>
+    <a href="strutture.html" class="btn-teal">Trova una struttura</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="ft">
+    <div>
+      <div class="ft-logo">ACDA Academy</div>
+      <div style="margin-top:.3rem;font-size:.78rem;">Automated Carbon Dioxide Angiography</div>
+    </div>
+    <div class="ft-links">
+      <a href="/">Home</a>
+      <a href="paziente.html">Pazienti</a>
+      <a href="medico.html">Medici</a>
+      <a href="strutture.html">Strutture</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+  <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista.</div>
+</footer>
+
+<script>
+function filterArticles(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.article-card').forEach(function(card){
+    if (card.style.opacity === '0.45') return; // skip placeholders
+    if (cat === 'all') {
+      card.style.display = '';
+    } else {
+      var cats = card.getAttribute('data-cat') || '';
+      card.style.display = cats.indexOf(cat) !== -1 ? '' : 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
