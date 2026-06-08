@@ -127,20 +127,33 @@
     <button class="filter-btn" onclick="filterArticles('medico', this)">🩺 Medico</button>
   </div>
 
-  <div class="articles" id="articles-grid">
+    <div class="articles" id="articles-grid">
 
-    <!-- ARTICOLO 1 — FEATURED -->
-    <article class="article-card featured" data-cat="paziente caregiver">
-      <div class="card-img"><div class="card-img-icon">🩻</div></div>
+    <!-- ARTICOLO 4 — FEATURED (più recente) -->
+    <article class="article-card featured" data-cat="paziente">
+      <div class="card-img"><div class="card-img-icon">🔬</div></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag paziente">Paziente</span>
+          <span class="card-date">Giugno 2026</span>
+        </div>
+        <h2>Creatinina, eGFR e angiografia: guida per capire il rischio reni (e le alternative)</h2>
+        <p>Cosa significano creatinina ed eGFR prima di una TAC o angiografia con contrasto. Tabella del rischio per GFR, checklist in 10 domande da fare allo specialista e opzioni contrast-sparing e Zero Contrast.</p>
+        <a href="blog/creatinina-egfr-angiografia-rischio-reni-alternative-contrasto-iodato.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- ARTICOLO 3 -->
+    <article class="article-card" data-cat="paziente caregiver">
       <div class="card-body">
         <div class="card-meta">
           <span class="tag paziente">Paziente</span>
           <span class="tag caregiver">Famiglia</span>
-          <span class="card-date">Giugno 2025</span>
+          <span class="card-date">Maggio 2026</span>
         </div>
-        <h2>Angiografia: cosa succede prima, durante e dopo (e come ridurre il contrasto iodato)</h2>
-        <p>Guida completa per chi deve sottoporsi a un'angiografia: preparazione, cosa si sente in sala, recupero a casa. Con una sezione dedicata alle strategie contrast-sparing e alla CO₂ per chi ha reni fragili o allergie al mezzo di contrasto iodato.</p>
-        <a href="blog/angiografia-prima-durante-dopo-contrast-sparing.html" class="card-link">Leggi l'articolo →</a>
+        <h2>Angiografia e mezzo di contrasto: sei "a rischio reni"? Guida semplice</h2>
+        <p>Quando il mezzo di contrasto iodato può essere delicato per i reni, quali informazioni portare all'esame, 8 domande da fare allo specialista e le strategie contrast-sparing disponibili.</p>
+        <a href="blog/angiografia-mezzo-di-contrasto-rischio-reni.html" class="card-link">Leggi l'articolo →</a>
       </div>
     </article>
 
@@ -149,7 +162,7 @@
       <div class="card-body">
         <div class="card-meta">
           <span class="tag caregiver">Famiglia</span>
-          <span class="card-date">Giugno 2025</span>
+          <span class="card-date">Aprile 2026</span>
         </div>
         <h2>Angiografia con CO₂: quanto si risparmia in giorni di ricovero e costi</h2>
         <p>Per famiglie e caregiver: come l'angiografia con CO₂ può ridurre il rischio di complicanze renali e limitare degenze prolungate. Con domande pratiche da fare al medico e FAQ.</p>
@@ -157,7 +170,21 @@
       </div>
     </article>
 
-    <!-- PLACEHOLDER per articoli futuri -->
+    <!-- ARTICOLO 1 -->
+    <article class="article-card" data-cat="paziente caregiver">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag paziente">Paziente</span>
+          <span class="tag caregiver">Famiglia</span>
+          <span class="card-date">Marzo 2026</span>
+        </div>
+        <h2>Angiografia: cosa succede prima, durante e dopo (e come ridurre il contrasto iodato)</h2>
+        <p>Guida completa per chi deve sottoporsi a un'angiografia: preparazione, cosa si sente in sala, recupero a casa. Con sezione dedicata alle strategie contrast-sparing e alla CO₂ per chi ha reni fragili.</p>
+        <a href="blog/angiografia-prima-durante-dopo-contrast-sparing.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- PLACEHOLDER -->
     <article class="article-card" data-cat="medico" style="opacity:.45;pointer-events:none">
       <div class="card-body">
         <div class="card-meta">
@@ -166,18 +193,6 @@
         </div>
         <h2>Il KID Trial: primo RCT sulla CO₂ per la prevenzione del danno renale</h2>
         <p>Analisi del protocollo del primo trial randomizzato controllato specificamente disegnato per valutare la CO₂ nella prevenzione della nefropatia da contrasto.</p>
-        <span class="card-link">In arrivo →</span>
-      </div>
-    </article>
-
-    <article class="article-card" data-cat="paziente" style="opacity:.45;pointer-events:none">
-      <div class="card-body">
-        <div class="card-meta">
-          <span class="tag paziente">Paziente</span>
-          <span class="card-date">Prossimamente</span>
-        </div>
-        <h2>Diabete e angiografia: come proteggere i reni prima e dopo l'esame</h2>
-        <p>Guida pratica per i pazienti diabetici che devono fare un'angiografia: cosa sapere sulla metformina, il GFR e le alternative al mezzo di contrasto iodato.</p>
         <span class="card-link">In arrivo →</span>
       </div>
     </article>
