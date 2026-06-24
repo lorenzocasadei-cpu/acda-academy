@@ -169,6 +169,36 @@
     .copy-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:white;padding:.2rem .65rem;border-radius:3px;cursor:pointer;font-size:.78rem;font-weight:600;font-family:'Barlow',sans-serif;transition:background .15s}
     .copy-btn:hover{background:rgba(255,255,255,.22)}
     .copy-btn.copied{background:var(--teal);border-color:var(--teal)}
+  
+    /* ── MOBILE NAV ── */
+    .nav-links{display:flex;gap:.15rem}
+    .nav-links a{color:var(--muted);text-decoration:none;padding:.4rem .75rem;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-radius:3px;transition:color .15s,background .15s;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active{color:var(--teal);background:rgba(0,103,127,.07)}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--teal)}
+    .hamburger svg{display:block}
+    .mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;background:white;border-bottom:2px solid var(--teal);padding:1rem 1.25rem;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu a{display:block;padding:.65rem 0;color:var(--text);text-decoration:none;font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border)}
+    .mobile-menu a:last-child{border-bottom:none}
+    .mobile-menu a.active{color:var(--teal)}
+    .mobile-menu.open{display:block}
+    @media(max-width:700px){
+      .nav-links{display:none}
+      .hamburger{display:flex;align-items:center;justify-content:center}
+    }
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--teal)}
+    .hamburger svg{display:block}
+    .mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;background:white;border-bottom:2px solid var(--teal);padding:1rem 1.25rem;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu a{display:block;padding:.65rem 0;color:var(--text);text-decoration:none;font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border)}
+    .mobile-menu a:last-child{border-bottom:none}
+    .mobile-menu.open{display:block}
+    @media(max-width:700px){.hamburger{display:flex;align-items:center;justify-content:center}}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--teal)}
+    .hamburger svg{display:block}
+    .mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;background:white;border-bottom:2px solid var(--teal);padding:1rem 1.25rem;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu a{display:block;padding:.65rem 0;color:var(--text);text-decoration:none;font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border)}
+    .mobile-menu a:last-child{border-bottom:none}
+    .mobile-menu.open{display:block}
+    @media(max-width:700px){.hamburger{display:flex;align-items:center;justify-content:center}}
   </style>
 </head>
 <body>
@@ -177,8 +207,23 @@
   <div class="header-inner">
     <a href="/" class="logo">ACDA <span>Academy</span></a>
     <a href="/" class="back-link">← Home</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="9.75" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="15.5" width="22" height="2.5" rx="1.25" fill="currentColor"/></svg></button>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/">Home</a>
+  <a href="/paziente.html">Pazienti</a>
+  <a href="/medico.html">Medici</a>
+  <a href="/strutture.html">Strutture</a>
+  <a href="/blog.html">Blog</a>
+</div>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/">Home</a>
+  <a href="/paziente.html">Pazienti</a>
+  <a href="/medico.html">Medici</a>
+  <a href="/strutture.html">Strutture</a>
+  <a href="/blog.html">Blog</a>
+</div>
 
 <div class="jump-nav">
   <div class="jump-nav-inner">
