@@ -228,6 +228,12 @@
     .mobile-menu a:last-child{border-bottom:none}
     .mobile-menu.open{display:block}
     @media(max-width:700px){.hamburger{display:flex;align-items:center;justify-content:center}}
+
+    .lang-switch{display:flex;gap:.3rem;align-items:center;font-size:.78rem}
+    .lang-switch a{font-weight:700;color:var(--muted);text-decoration:none;padding:.25rem .4rem;border-radius:3px;text-transform:uppercase}
+    .lang-switch a:hover,.lang-switch a.active{color:var(--teal);background:rgba(0,103,127,.08)}
+    .lang-switch span{color:var(--border)}
+    .mobile-menu .lang-switch{justify-content:center;padding:.75rem 0 0}
   </style>
 </head>
 <body>
@@ -235,6 +241,12 @@
 <header>
   <div class="header-inner">
     <a href="/" class="logo">ACDA <span>Academy</span></a>
+    <span class="lang-switch">
+      <a href="#" class="active">IT</a><span>/</span>
+      <a href="paziente-en.html">EN</a><span>/</span>
+      <a href="paziente-fr.html">FR</a><span>/</span>
+      <a href="paziente-de.html">DE</a>
+    </span>
     <a href="/" class="back-link">← Home</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="9.75" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="15.5" width="22" height="2.5" rx="1.25" fill="currentColor"/></svg></button>
   </div>
@@ -245,6 +257,12 @@
   <a href="/medico.html">Medici</a>
   <a href="/strutture.html">Strutture</a>
   <a href="/blog.html">Blog</a>
+  <div class="lang-switch">
+    <a href="#" class="active">IT</a><span>/</span>
+    <a href="/paziente-en.html">EN</a><span>/</span>
+    <a href="/paziente-fr.html">FR</a><span>/</span>
+    <a href="/paziente-de.html">DE</a>
+  </div>
 </div>
 <div class="mobile-menu" id="mobile-menu">
   <a href="/">Home</a>
