@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angiographie CO₂ pour les médecins : Directives, protocoles et gestion du patient néphropathique | ACDA Academy</title>
+  <meta name="description" content="Ressources cliniques pour les médecins généralistes, chirurgiens vasculaires et radiologues interventionnels : quand utiliser la CO₂ plutôt que le produit de contraste iodé, protocoles de risque, coûts et comment orienter le patient.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acda-academy.com/medico-fr.html">
+  <link rel="alternate" hreflang="it" href="https://acda-academy.com/medico.html">
+  <link rel="alternate" hreflang="fr" href="https://acda-academy.com/medico-fr.html">
+  <link rel="alternate" hreflang="fr" href="https://acda-academy.com/medico-fr.html">
+  <link rel="alternate" hreflang="de" href="https://acda-academy.com/medico-de.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Angiographie CO₂ — Ressources pour les médecins",
+    "description": "Directives cliniques, protocoles de risque et ressources pour les médecins généralistes et spécialistes sur l'angiographie CO₂ chez les patients néphropathiques",
+    "url": "https://acda-academy.com/medico-en.html",
+    "inLanguage": "en",
+    "audience": {"@type": "MedicalAudience", "audienceType": "Médecins, chirurgiens vasculaires, radiologues interventionnels"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"></noscript>
+
+  <style>
+    :root {
+      --teal:       #00677F;
+      --teal-light: #58C5C0;
+      --teal-dark:  #00363B;
+      --navy:       #003F5C;
+      --orange:     #EF7D00;
+      --sand:       #DEDCD2;
+      --black:      #111111;
+      --white:      #ffffff;
+      --text:       #1a1a1a;
+      --muted:      #4a5a63;
+      --border:     #d0d8dc;
+      --bg:         #f4f6f6;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; font-size: 16px; }
+
+    header { background: var(--white); border-bottom: 2px solid var(--teal); padding: 0 1.25rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .04em; }
+    .logo span { color: var(--teal-light); }
+    .back-link { font-size: .82rem; font-weight: 600; color: var(--teal); text-decoration: none; text-transform: uppercase; letter-spacing: .05em; }
+    .back-link:hover { color: var(--orange); }
+
+    .jump-nav { background: var(--sand); border-bottom: 1px solid rgba(0,103,127,.15); padding: .9rem 1.25rem; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+    .jump-nav-inner { max-width: 900px; margin: 0 auto; display: flex; gap: .5rem; }
+    .jump-nav a { display: inline-block; padding: .4rem .9rem; border-radius: 100px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; text-decoration: none; color: var(--teal); border: 1.5px solid var(--teal); white-space: nowrap; transition: background .15s, color .15s; }
+    .jump-nav a:hover { background: var(--teal); color: white; }
+
+    .hero { background: var(--navy); color: white; padding: 3.5rem 1.25rem 3rem; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .breadcrumb { font-size: .75rem; color: rgba(255,255,255,.5); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--teal-light); text-decoration: none; }
+    .tag { display: inline-block; background: rgba(88,197,192,.18); border: 1px solid rgba(88,197,192,.3); border-radius: 2px; padding: .22rem .8rem; font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.8rem, 5vw, 2.9rem); font-weight: 700; text-transform: uppercase; letter-spacing: .02em; line-height: 1.1; margin-bottom: 1rem; }
+    .hero h1 span { color: var(--teal-light); }
+    .hero p { font-size: 1rem; color: rgba(255,255,255,.75); font-weight: 300; line-height: 1.7; max-width: 680px; }
+
+    .tab-strip { background: var(--white); border-bottom: 2px solid var(--border); padding: 0 1.25rem; overflow-x: auto; white-space: nowrap; }
+    .tab-strip-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 0; }
+    .tab-btn { padding: .9rem 1.3rem; border: none; background: none; cursor: pointer; font-family: 'Barlow', sans-serif; font-size: .85rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; transition: color .2s, border-color .2s; }
+    .tab-btn.active { color: var(--teal); border-bottom-color: var(--teal); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .content { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+
+    .block { margin-bottom: 3rem; }
+    .block-label { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); margin-bottom: .4rem; }
+    h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.45rem, 3.5vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--teal-dark); margin-bottom: .75rem; line-height: 1.15; }
+    h3 { font-size: .97rem; font-weight: 700; color: var(--teal-dark); margin: 1.4rem 0 .4rem; text-transform: uppercase; letter-spacing: .04em; font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; }
+    p { color: var(--muted); margin-bottom: .75rem; font-size: .95rem; line-height: 1.75; }
+    strong { color: var(--text); }
+
+    .risk-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .87rem; }
+    .risk-table th { background: var(--teal-dark); color: white; padding: .7rem .9rem; text-align: left; font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+    .risk-table td { padding: .65rem .9rem; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: middle; line-height: 1.5; }
+    .risk-table tr:last-child td { border-bottom: none; }
+    .risk-table tr:nth-child(even) td { background: var(--bg); }
+    .risk-table td:first-child { font-weight: 600; color: var(--text); }
+    .badge { display: inline-block; padding: .2rem .6rem; border-radius: 100px; font-size: .75rem; font-weight: 700; }
+    .badge.alto { background: rgba(239,125,0,.15); color: var(--orange); }
+    .badge.medio { background: rgba(0,103,127,.12); color: var(--teal); }
+    .badge.basso { background: rgba(88,197,192,.15); color: #007a6e; }
+
+    .info-box { background: rgba(0,103,127,.06); border-left: 3px solid var(--teal); border-radius: 0 6px 6px 0; padding: 1rem 1.1rem; margin: 1.25rem 0; font-size: .9rem; color: var(--teal-dark); line-height: 1.65; }
+    .info-box.orange { background: rgba(239,125,0,.07); border-color: var(--orange); color: var(--text); }
+    .info-box.green { background: rgba(88,197,192,.1); border-color: var(--teal-light); }
+
+    .check-list { list-style: none; margin: .75rem 0; }
+    .check-list li { display: flex; gap: .75rem; align-items: flex-start; padding: .45rem 0; font-size: .92rem; color: var(--muted); border-bottom: 1px solid var(--border); line-height: 1.55; }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list li .ic { flex-shrink: 0; color: var(--teal); font-weight: 700; }
+
+    .protocol { background: var(--teal-dark); color: white; border-radius: 8px; padding: 1.5rem 1.25rem; margin: 1.5rem 0; }
+    .protocol h3 { color: var(--teal-light); margin-top: 0; font-size: 1rem; margin-bottom: .75rem; }
+    .protocol ol { padding-left: 1.3rem; }
+    .protocol li { font-size: .9rem; color: rgba(255,255,255,.82); padding: .35rem 0; line-height: 1.6; }
+    .protocol li strong { color: white; }
+
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+    .stat-box { background: var(--teal); border-radius: 6px; padding: 1.1rem; text-align: center; }
+    .stat-n { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 700; color: white; display: block; line-height: 1; }
+    .stat-l { font-size: .78rem; color: rgba(255,255,255,.82); margin-top: .3rem; line-height: 1.4; }
+
+    .compare { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: .86rem; }
+    .compare th { background: var(--teal-dark); color: white; padding: .7rem .85rem; text-align: left; font-weight: 700; font-size: .77rem; text-transform: uppercase; letter-spacing: .05em; }
+    .compare td { padding: .65rem .85rem; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: top; line-height: 1.5; }
+    .compare tr:last-child td { border-bottom: none; }
+    .compare tr:nth-child(even) td { background: var(--bg); }
+    .compare td:first-child { font-weight: 600; color: var(--text); width: 30%; }
+    .good { color: #007a6e !important; font-weight: 700 !important; }
+    .bad { color: var(--orange) !important; }
+
+    .cta-card { background: var(--teal-dark); color: white; border-radius: 8px; padding: 1.75rem 1.5rem; margin: 2rem 0; text-align: center; }
+    .cta-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; color: white; margin-bottom: .5rem; margin-top: 0; }
+    .cta-card p { color: rgba(255,255,255,.75); font-size: .9rem; margin-bottom: 1.25rem; }
+    .cta-card .note { display: block; margin-top: .75rem; font-size: .82rem; color: rgba(255,255,255,.55); }
+
+    details { border: 1px solid rgba(0,103,127,.15); border-left: 3px solid var(--teal); border-radius: 2px; margin-bottom: .6rem; background: white; }
+    summary { padding: .95rem 1.1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; font-size: .9rem; color: var(--teal-dark); gap: .75rem; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--teal); flex-shrink: 0; font-weight: 300; transition: transform .2s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details[open] summary { color: var(--teal); }
+    .faq-ans { padding: .85rem 1.1rem 1.1rem; border-top: 1px solid var(--border); font-size: .88rem; color: var(--muted); line-height: 1.75; }
+    .faq-ans ul { list-style: disc; padding-left: 1.2rem; margin-top: .4rem; }
+    .faq-ans li { padding: .2rem 0; }
+
+    .divider { border: none; border-top: 2px solid var(--sand); margin: 2.5rem 0; }
+
+    footer { background: var(--black); color: rgba(255,255,255,.5); padding: 2rem 1.25rem 1.25rem; font-size: .83rem; margin-top: 3rem; }
+    .ft { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 1rem; }
+    .ft-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--teal-light); text-transform: uppercase; }
+    .ft-links { display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
+    .ft-links a { color: rgba(255,255,255,.5); text-decoration: none; font-size: .82rem; }
+    .ft-links a:hover { color: var(--teal-light); }
+    .ft-disc { max-width: 900px; margin: 0 auto; color: rgba(255,255,255,.28); font-size: .76rem; line-height: 1.6; }
+
+    @media (max-width: 500px) {
+      .compare, .risk-table { font-size: .78rem; }
+      .compare th, .compare td, .risk-table th, .risk-table td { padding: .5rem .6rem; }
+    }
+
+    .email-block{text-align:center;margin-top:.5rem}
+    .btn-gmail{display:inline-block;background:var(--orange);color:white;padding:.9rem 2rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:.95rem;text-transform:uppercase;letter-spacing:.04em;transition:background .2s,transform .15s}
+    .btn-gmail:hover{background:#d06e00;transform:translateY(-1px)}
+    .email-plain{margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
+    .email-addr{color:var(--teal-light);font-weight:600;letter-spacing:.02em}
+    .copy-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:white;padding:.2rem .65rem;border-radius:3px;cursor:pointer;font-size:.78rem;font-weight:600;font-family:'Barlow',sans-serif;transition:background .15s}
+    .copy-btn:hover{background:rgba(255,255,255,.22)}
+    .copy-btn.copied{background:var(--teal);border-color:var(--teal)}
+
+    .nav-links{display:flex;gap:.15rem}
+    .nav-links a{color:var(--muted);text-decoration:none;padding:.4rem .75rem;font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-radius:3px;transition:color .15s,background .15s;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active{color:var(--teal);background:rgba(0,103,127,.07)}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--teal)}
+    .hamburger svg{display:block}
+    .mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;background:white;border-bottom:2px solid var(--teal);padding:1rem 1.25rem;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu a{display:block;padding:.65rem 0;color:var(--text);text-decoration:none;font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border)}
+    .mobile-menu a:last-child{border-bottom:none}
+    .mobile-menu.open{display:block}
+    @media(max-width:700px){.hamburger{display:flex;align-items:center;justify-content:center}}
+
+    .lang-switch{display:flex;gap:.3rem;align-items:center;font-size:.78rem}
+    .lang-switch a{font-weight:700;color:var(--muted);text-decoration:none;padding:.25rem .4rem;border-radius:3px;text-transform:uppercase}
+    .lang-switch a:hover,.lang-switch a.active{color:var(--teal);background:rgba(0,103,127,.08)}
+    .lang-switch span{color:var(--border)}
+    .mobile-menu .lang-switch{justify-content:center;padding:.75rem 0 0}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/index-fr.html" class="logo">ACDA <span>Academy</span></a>
+    <span class="lang-switch">
+      <a href="/medico.html">IT</a><span>/</span>
+      <a href="/medico-en.html">EN</a><span>/</span>
+      <a href="#" class="active">FR</a><span>/</span>
+      <a href="/medico-de.html">DE</a>
+    </span>
+    <a href="/index-fr.html" class="back-link">← Home</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="9.75" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="15.5" width="22" height="2.5" rx="1.25" fill="currentColor"/></svg></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/index-fr.html">Accueil</a>
+  <a href="/paziente-fr.html">Patients</a>
+  <a href="/medico-fr.html">Médecins</a>
+  <a href="/strutture-fr.html">Structures</a>
+  <a href="/blog.html">Blog</a>
+  <div class="lang-switch">
+    <a href="/medico.html">IT</a><span>/</span>
+    <a href="/medico-en.html">EN</a><span>/</span>
+    <a href="#" class="active">FR</a><span>/</span>
+    <a href="/medico-de.html">DE</a>
+  </div>
+</div>
+
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <a href="#mmg" onclick="activateTab('mmg')">Médecin généraliste</a>
+    <a href="#rischio" onclick="activateTab('mmg')">Risque rénal</a>
+    <a href="#indicazioni" onclick="activateTab('mmg')">Indications CO₂</a>
+    <a href="#protocollo" onclick="activateTab('spec')">Protocole</a>
+    <a href="#costi" onclick="activateTab('spec')">Coûts</a>
+    <a href="#specialista" onclick="activateTab('spec')">Spécialiste</a>
+    <a href="#strutture">Structures</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/index-fr.html">Accueil</a> › Ressources pour les médecins</div>
+    <div class="tag">🩺 Pour les médecins, chirurgiens vasculaires et radiologues interventionnels</div>
+    <h1>CO₂ as a contrast medium:<br><span>clinical guide for physicians</span></h1>
+    <p>Quand utiliser l'angiographie CO₂ au lieu du produit de contraste iodé, comment identifier les patients à haut risque rénal, protocoles pratiques et impact économique pour l'hôpital.</p>
+  </div>
+</div>
+
+<div class="tab-strip">
+  <div class="tab-strip-inner">
+    <button class="tab-btn active" onclick="showTab('mmg', this)">🏥 Médecin généraliste</button>
+    <button class="tab-btn" onclick="showTab('spec', this)">🔬 Chirurgien / Radiologue</button>
+  </div>
+</div>
+
+<div class="content">
+
+  <div id="tab-mmg" class="tab-content active">
+
+    <div class="block" id="mmg">
+      <span class="block-label">Pour le médecin généraliste</span>
+      <h2>Quand votre patient a besoin d'une angiographie : ce qu'il faut savoir et comment l'orienter</h2>
+      <p>Le médecin généraliste est souvent le premier à recevoir les demandes de clarification du patient — et le premier à pouvoir faire la différence, en l'orientant vers des structures utilisant des techniques plus sûres pour la fonction rénale.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="rischio">
+      <span class="block-label">Évaluation pré-procédurale</span>
+      <h2>Qui est vraiment à risque de néphropathie aux produits de contraste ?</h2>
+      <p>La néphropathie aux produits de contraste (CI-AKI) reste l'une des causes iatrogènes les plus fréquentes de lésion rénale aiguë en milieu hospitalier. Identifier les patients à risque avant la procédure est le moment le plus efficace pour la prévenir.</p>
+
+      <div class="stat-grid">
+        <div class="stat-box"><span class="stat-n">1–5%</span><div class="stat-l">des patients aux reins sains développent une CI-AKI</div></div>
+        <div class="stat-box"><span class="stat-n">25–30%</span><div class="stat-l">des patients atteints de MRC stade 3–4 + diabète</div></div>
+        <div class="stat-box"><span class="stat-n">40–50%</span><div class="stat-l">des patients présentant plusieurs facteurs de haut risque</div></div>
+        <div class="stat-box"><span class="stat-n">+3.5 days</span><div class="stat-l">durée de séjour supplémentaire moyenne pour les patients atteints de CI-AKI</div></div>
+      </div>
+
+      <h3>Stratification du risque selon le DFG</h3>
+      <table class="risk-table">
+        <thead><tr><th>DFG (ml/min/1,73m²)</th><th>Stade MRC</th><th>Risque CI-AKI</th><th>Recommandation</th></tr></thead>
+        <tbody>
+          <tr><td>&gt; 60</td><td>1–2</td><td><span class="badge basso">Low</span></td><td>Produit de contraste iodé avec précautions standard (hydratation)</td></tr>
+          <tr><td>45–60</td><td>3a</td><td><span class="badge medio">Moderate</span></td><td>Envisager la CO₂ si disponible ; hydratation IV recommandée</td></tr>
+          <tr><td>30–45</td><td>3b</td><td><span class="badge alto">High</span></td><td>Préférer la CO₂ ; si l'iode est utilisé, dose minimale efficace</td></tr>
+          <tr><td>&lt; 30</td><td>4–5</td><td><span class="badge alto">Very high</span></td><td>CO₂ recommandée ; iode uniquement si irremplaçable</td></tr>
+          <tr><td>Dialysis</td><td>5D</td><td><span class="badge basso">Renal: absent</span></td><td>CO₂ préférable pour éviter les complications systémiques</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Facteurs de risque supplémentaires</h3>
+      <ul class="check-list">
+        <li><span class="ic">⚠</span><span><strong>Diabète sucré</strong> — même avec DFG &gt; 60, augmente significativement le risque</span></li>
+        <li><span class="ic">⚠</span><span><strong>Artériopathie périphérique</strong> — souvent associée à une MRC subclinique</span></li>
+        <li><span class="ic">⚠</span><span><strong>Metformine en cours</strong> — risque d'acidose lactique ; suspendre 48h avant si un produit de contraste iodé est utilisé</span></li>
+        <li><span class="ic">⚠</span><span><strong>AINS et diurétiques</strong> — réduisent la perfusion rénale</span></li>
+        <li><span class="ic">⚠</span><span><strong>Déshydratation</strong> — amplifie les dommages néphrotoxiques</span></li>
+        <li><span class="ic">⚠</span><span><strong>Insuffisance cardiaque</strong> — réduit le flux rénal basal</span></li>
+        <li><span class="ic">⚠</span><span><strong>Âge &gt; 70 ans</strong> — la fonction rénale diminue physiologiquement avec l'âge</span></li>
+      </ul>
+
+      <div class="info-box orange">⚠ <strong>La triade à plus haut risque :</strong> diabète + MRC stade 3b–4 + artériopathie périphérique. Chez ces patients, le produit de contraste iodé doit être évité chaque fois qu'une alternative viable comme la CO₂ existe.</div>
+
+      <div style="background:var(--bg);border-radius:6px;padding:1.1rem 1.25rem;margin-top:1.5rem;font-size:.82rem;color:var(--muted);line-height:1.8;">
+        <strong style="color:var(--text);display:block;margin-bottom:.75rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;">📚 Sources et références scientifiques</strong>
+
+        <p style="font-size:.78rem;color:var(--muted);margin-bottom:.75rem;font-style:italic;">Sélection d'études cliniques récentes et de revues systématiques sur l'angiographie CO₂ et la néphropathie aux produits de contraste.</p>
+
+        <p style="font-weight:700;color:var(--text);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;">Risque rénal des produits de contraste iodés</p>
+        <ol style="padding-left:1.2rem;margin-bottom:1rem;">
+          <li style="margin-bottom:.35rem;">Mehran R, et al. <em>A Simple Risk Score for Prediction of Contrast-Induced Nephropathy.</em> J Am Coll Cardiol. 2004. <a href="https://pubmed.ncbi.nlm.nih.gov/15336985/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Weisbord SD, et al. <em>Contrast-Associated Acute Kidney Injury.</em> N Engl J Med. 2019. <a href="https://pubmed.ncbi.nlm.nih.gov/30779732/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Wittig T, et al. <em>Acute Kidney Injury After Peripheral Interventions Using Carbon Dioxide Angiography — Risk Factors Beyond Iodinated Contrast Media.</em> Life. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40283433/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li>Uyanik SA, et al. <em>The role of carbon dioxide angiography in reducing contrast-induced nephropathy in diabetic foot patients undergoing endovascular treatment.</em> Turkish J Med Sci. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40259844/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+        </ol>
+
+        <p style="font-weight:700;color:var(--text);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;">CO₂ comme alternative aux produits de contraste iodés — revues systématiques et méta-analyses</p>
+        <ol style="padding-left:1.2rem;margin-bottom:1rem;" start="5">
+          <li style="margin-bottom:.35rem;">Wawer Matos Reimer RP, et al. <em>Safety and evidence of CO₂ as a vascular contrast agent — systematic review by the ESUR Contrast Medium Safety Committee.</em> European Radiology. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39775997/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Shen G, et al. <em>CO₂ angiography offers clinical advantages over iodinated contrast in endovascular aneurysm repair: a systematic review and meta-analysis.</em> BMC Surgery. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39780139/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Felici L, et al. <em>Optimizing Endovascular Aortic Repair With Carbon Dioxide: A Systematic Review Toward Zero Contrast Use.</em> Vascular and Endovascular Surgery. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40100042/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li>Spath P, et al. <em>Systematic Review of Renal Outcomes and Procedural Efficacy of CO₂ Digital Subtraction Angiography in Endovascular Aortic Repair.</em> EJVES Vascular Forum. 2026. <a href="https://pubmed.ncbi.nlm.nih.gov/40226768/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+        </ol>
+
+        <p style="font-weight:700;color:var(--text);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;">Études cliniques prospectives — Contraste zéro iode</p>
+        <ol style="padding-left:1.2rem;margin-bottom:1rem;" start="9">
+          <li style="margin-bottom:.35rem;">Chisci E, et al. <em>Feasibility and Safety of Using Carbon Dioxide Exclusively in Regular Endovascular Aortic Aneurysm Repair: Results of a Multicentre, Prospective, Zero Iodine Contrast EVAR Study.</em> Eur J Vasc Endovasc Surg. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39557380/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Falso R, et al. <em>Total Iodine Contrast-Free Protocol in Complex Endovascular Aneurysm Repair.</em> Journal of Endovascular Therapy. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/40448569/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li style="margin-bottom:.35rem;">Allievi S, et al. <em>Towards Contrast Free EVAR: CO₂ Automated Angiography in Chronic Kidney Disease.</em> Eur J Vasc Endovasc Surg. 2023. <a href="https://pubmed.ncbi.nlm.nih.gov/37088415/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+          <li>Busutti M, et al. <em>Renal Benefits of CO₂ as a Contrast Media for EVAR Procedures: New Perspectives on 1 Year Outcomes.</em> Journal of Endovascular Therapy. 2023. <a href="https://pubmed.ncbi.nlm.nih.gov/35822616/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+        </ol>
+
+        <p style="font-weight:700;color:var(--text);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;">Essais randomisés en cours</p>
+        <ol style="padding-left:1.2rem;" start="13">
+          <li>Saratzis A, et al. <em>Preventing kidney injury using carbon dioxide (KID trial): trial protocol for a multicentre randomised controlled trial.</em> BMJ Open. 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39837598/" target="_blank" rel="noopener" style="color:var(--teal)">PubMed →</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="indicazioni">
+      <span class="block-label">Indications cliniques</span>
+      <h2>Quand et comment indiquer la CO₂ dans la demande clinique</h2>
+      <p>Le médecin généraliste peut faire la différence dans la chaîne diagnostique en indiquant explicitement dans la demande clinique la nécessité d'une technique alternative au produit de contraste iodé.</p>
+
+      <div class="protocol">
+        <h3>📋 Comment rédiger la demande clinique</h3>
+        <ol>
+          <li><strong>Indiquer l'état rénal :</strong> "Patient atteint de MRC stade 3b (DFG : ___ ml/min) et de diabète sucré de type 2."</li>
+          <li><strong>Signaler le risque :</strong> "Contre-indication relative au produit de contraste iodé en raison d'un risque élevé de CI-AKI."</li>
+          <li><strong>Demander l'alternative :</strong> "L'angiographie CO₂ est demandée comme produit de contraste alternatif (si techniquement applicable pour le site anatomique demandé)."</li>
+          <li><strong>Joindre les données :</strong> Créatinine et DFG récents, liste des médicaments (metformine, AINS, diurétiques), tout antécédent de réaction aux produits de contraste.</li>
+        </ol>
+      </div>
+
+      <h3>Où la CO₂ est indiquée et où elle ne l'est pas</h3>
+      <table class="compare">
+        <thead><tr><th>Site anatomique</th><th>CO₂ indiquée ?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Artères des membres inférieurs</td><td class="good">✓ Premier choix</td><td>Indication principale, excellente qualité d'image</td></tr>
+          <tr><td>Aorte abdominale / EVAR</td><td class="good">✓ Indiquée</td><td>Largement utilisée dans les protocoles zéro contraste</td></tr>
+          <tr><td>Artères rénales</td><td class="good">✓ Indiquée</td><td>Particulièrement utile précisément chez les patients néphropathiques</td></tr>
+          <tr><td>Artères viscérales</td><td class="good">✓ Avec précaution</td><td>Utilisation croissante, dépend de l'expérience du centre</td></tr>
+          <tr><td>Fistules de dialyse</td><td class="good">✓ Indiquée</td><td>Excellente alternative pour les patients dialysés</td></tr>
+          <tr><td>Artères coronaires</td><td class="bad">✗ Non indiquée</td><td>Risque d'embolie gazeuse cérébrale au-dessus du diaphragme</td></tr>
+          <tr><td>Vaisseaux cérébraux / carotides</td><td class="bad">✗ Non indiquée</td><td>Contre-indiquée au-dessus du diaphragme</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Gestion pratique</span>
+      <h2>Que faire avant et après la procédure</h2>
+
+      <h3>Pré-procédure — liste de contrôle pour le médecin généraliste</h3>
+      <ul class="check-list">
+        <li><span class="ic">✓</span><span>Demander créatinine et DFG mis à jour (dans les 3 mois, de préférence dans les 30 jours)</span></li>
+        <li><span class="ic">✓</span><span>Suspendre la <strong>metformine</strong> 48h avant la procédure (si un produit de contraste iodé est utilisé) ; reprendre après 48h avec un DFG stable</span></li>
+        <li><span class="ic">✓</span><span>Envisager la suspension temporaire des <strong>AINS et diurétiques</strong> en accord avec le spécialiste</span></li>
+        <li><span class="ic">✓</span><span>S'assurer que le patient est adéquatement <strong>hydraté</strong> le jour de l'examen</span></li>
+        <li><span class="ic">✓</span><span>Recueillir les antécédents allergiques : réactions précédentes aux produits de contraste, allergies à l'iode</span></li>
+        <li><span class="ic">✓</span><span>Indiquer le profil de risque rénal dans la demande clinique et demander explicitement la CO₂ si indiquée</span></li>
+      </ul>
+
+      <h3>Post-procédure — surveillance</h3>
+      <ul class="check-list">
+        <li><span class="ic">✓</span><span>Demander créatinine et DFG de contrôle à <strong>24–48h</strong> après la procédure (si un produit de contraste iodé a été utilisé)</span></li>
+        <li><span class="ic">✓</span><span>Si la créatinine augmente &gt; 0,3 mg/dL ou &gt; 50% de la valeur de base : consultation néphologique</span></li>
+        <li><span class="ic">✓</span><span>Reprendre la metformine uniquement après confirmation de la stabilité de la fonction rénale</span></li>
+        <li><span class="ic">✓</span><span>Surveiller la diurèse dans les 24h suivant l'examen</span></li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Communication avec le patient</span>
+      <h2>Comment expliquer la CO₂ à un patient inquiet</h2>
+      <p>La préoccupation la plus courante du patient est que la CO₂ est « expérimentale » ou « dangereuse ». Quelques phrases utiles pour le rassurer :</p>
+
+      <details>
+        <summary>"Mais le gaz dans les veines n'est-il pas dangereux ?"</summary>
+        <div class="faq-ans">La CO₂ est un gaz produit naturellement par l'organisme en quantités bien supérieures à celles utilisées en angiographie. Elle est rapidement éliminée par les poumons simplement en respirant. Avec les systèmes d'injection automatisés modernes, la procédure est sûre et contrôlée. Plus de 30 ans d'utilisation clinique et une littérature scientifique solide confirment sa sécurité.</div>
+      </details>
+      <details>
+        <summary>"Est-ce une nouvelle technique ? Je préfère le produit de contraste habituel"</summary>
+        <div class="faq-ans">L'angiographie CO₂ est utilisée en médecine depuis plus de 30 ans et est recommandée par les principales directives internationales de radiologie interventionnelle et de chirurgie vasculaire pour les patients à haut risque rénal. Ce n'est pas expérimental — c'est le standard de soins pour les patients néphropathiques dans les centres spécialisés.</div>
+      </details>
+      <details>
+        <summary>"Les images avec le gaz seront-elles moins claires ?"</summary>
+        <div class="faq-ans">Avec les systèmes d'injection numérique automatisés modernes, la qualité d'image obtenue avec la CO₂ est cliniquement adéquate pour les procédures des membres inférieurs et de l'aorte. Dans certains cas, elle peut être utilisée en combinaison avec de petites doses de produit de contraste iodé (technique « CO₂-first ») pour optimiser davantage la qualité, tout en maintenant une réduction significative de la charge néphrotoxique.</div>
+      </details>
+
+      <div class="info-box">💡 You can refer the patient to the <a href="/paziente-fr.html" style="color:var(--teal);font-weight:600;">paziente-fr.html</a> page of this site for a simple, complete explanation to read before the exam.</div>
+    </div>
+
+  </div>
+
+  <div id="tab-spec" class="tab-content">
+
+    <div class="block" id="specialista">
+      <span class="block-label">Pour le chirurgien vasculaire et le radiologue interventionnel</span>
+      <h2>Angiographie CO₂ : de la technique à la standardisation du protocole</h2>
+      <p>La CO₂ comme produit de contraste n'est plus une niche : c'est le standard de soins recommandé pour les patients néphropathiques et représente un atout clinique et de réputation pour les centres qui l'adoptent systématiquement.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Pourquoi systématiser</span>
+      <h2>Le problème : AKI induite par le contraste chez les patients endovasculaires</h2>
+      <p>Les patients arrivant en salle d'angiographie pour une artériopathie périphérique sont souvent les mêmes qui présentent le profil de risque le plus élevé pour la CI-AKI : âgés, diabétiques, avec une MRC subclinique ou manifeste. C'est la tempête parfaite.</p>
+
+      <div class="stat-grid">
+        <div class="stat-box"><span class="stat-n">~30%</span><div class="stat-l">des patients atteints d'AOMI ont une MRC stade 3 ou plus</div></div>
+        <div class="stat-box"><span class="stat-n">50–70%</span><div class="stat-l">de ces patients ont également un diabète sucré</div></div>
+        <div class="stat-box"><span class="stat-n">+40%</span><div class="stat-l">mortalité à 1 an chez les patients qui développent une CI-AKI</div></div>
+        <div class="stat-box"><span class="stat-n">100+</span><div class="stat-l">structures en Italie déjà équipées de la technologie CO₂</div></div>
+      </div>
+
+      <div class="info-box orange">⚠ <strong>Responsabilité médico-légale :</strong> en présence d'un patient atteint de MRC documentée pour lequel une alternative au produit de contraste iodé existe (CO₂), utiliser ce dernier sans documenter les raisons cliniques expose le médecin à un risque de responsabilité.</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="protocollo">
+      <span class="block-label">Protocole opérationnel</span>
+      <h2>Comment structurer un protocole CO₂ dans votre centre</h2>
+
+      <div class="protocol">
+        <h3>Phase 1 — Sélection du patient</h3>
+        <ol>
+          <li>Vérifier le DFG pré-procédural (seuil critique : &lt; 45 ml/min → CO₂ préférée)</li>
+          <li>Recueillir les allergies aux produits de contraste et l'utilisation de metformine</li>
+          <li>Évaluer le site anatomique : sous le diaphragme → CO₂ indiquée</li>
+          <li>Documenter le choix dans le consentement éclairé</li>
+        </ol>
+      </div>
+
+      <div class="protocol">
+        <h3>Phase 2 — Technique d'injection</h3>
+        <ol>
+          <li><strong>Système d'injection numérique automatisé</strong> — éliminer le dosage manuel ; garantit un contrôle précis du volume, de la pression et de la vitesse d'injection</li>
+          <li>Source de CO₂ médicale certifiée (pureté &gt; 99,9 %)</li>
+          <li>Volumes typiques : 20–60 ml par injection, avec des pauses adéquates entre les injections pour permettre la clairance pulmonaire</li>
+          <li>Positionnement du patient : position de Trendelenburg pour améliorer la qualité d'image pour les membres inférieurs</li>
+          <li>Acquisition d'images : DSA (Angiographie par Soustraction Numérique) avec protocoles optimisés pour la CO₂</li>
+        </ol>
+      </div>
+
+      <div class="protocol">
+        <h3>Phase 3 — Approche hybride (CO₂-first)</h3>
+        <ol>
+          <li>Réaliser l'ensemble de la procédure avec la CO₂ comme produit principal</li>
+          <li>Utiliser le produit de contraste iodé uniquement pour les phases critiques nécessitant une résolution maximale (ex. angioplastie dans une zone critique)</li>
+          <li>Objectif : réduire la dose totale de produit de contraste iodé de &gt; 70% par rapport au protocole standard</li>
+          <li>Documenter la dose totale de produit de contraste iodé utilisée pour chaque cas</li>
+        </ol>
+      </div>
+
+      <h3>Contre-indications absolues à la CO₂</h3>
+      <ul class="check-list">
+        <li><span class="ic">✗</span><span>Procédures au-dessus du diaphragme (coronaires, carotides, vertébrales, crosse aortique)</span></li>
+        <li><span class="ic">✗</span><span>Shunts intracardiaques ou intrapulmonaires droite-gauche (risque d'embolie systémique)</span></li>
+        <li><span class="ic">✗</span><span>Hypertension pulmonaire sévère</span></li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block" id="costi">
+      <span class="block-label">Impact économique</span>
+      <h2>Coûts et bénéfices pour l'hôpital : l'argument des soins basés sur la valeur</h2>
+      <p>La néphropathie aux produits de contraste n'est pas seulement un problème clinique — c'est un problème économique significatif pour tout établissement hospitalier adoptant une logique de soins basés sur la valeur.</p>
+
+      <h3>Coût direct d'un cas de CI-AKI</h3>
+      <ul class="check-list">
+        <li><span class="ic">→</span><span><strong>+3–5 jours d'hospitalisation supplémentaires</strong> par patient qui développe une CI-AKI</span></li>
+        <li><span class="ic">→</span><span><strong>Coût du séjour supplémentaire :</strong> 800–1 200 €/jour en service ordinaire</span></li>
+        <li><span class="ic">→</span><span><strong>Dialyse d'urgence</strong> (dans les cas graves) : 400–600 € par séance, souvent répétée</span></li>
+        <li><span class="ic">→</span><span><strong>Réadmissions à 30 jours :</strong> fréquentes chez les patients qui développent une CI-AKI post-procédurale</span></li>
+        <li><span class="ic">→</span><span><strong>Impact sur les GHM :</strong> les complications post-procédurales réduisent la marge du séjour</span></li>
+      </ul>
+
+      <div class="info-box green">
+        💡 <strong>Économies estimées :</strong> un centre réalisant 200 angiographies/an sur des patients à haut risque, réduisant l'incidence de CI-AKI de 25% à 5% grâce à l'adoption systématique de la CO₂, évite environ 40 cas de CI-AKI/an — avec des économies potentielles de 120 000–200 000 € par an rien qu'en séjours évités.
+      </div>
+
+      <h3>Le coût de la CO₂ par rapport au produit de contraste iodé</h3>
+      <p>Le coût du gaz CO₂ médical est significativement inférieur à celui du produit de contraste iodé par procédure. L'investissement principal est dans le système d'injection automatisé, qui s'amortit rapidement compte tenu des coûts des complications évitées.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="block">
+      <span class="block-label">Questions cliniques fréquentes</span>
+      <h2>FAQ clinique pour le spécialiste</h2>
+
+      <details>
+        <summary>La qualité d'image avec la CO₂ est-elle suffisante pour les procédures complexes ?</summary>
+        <div class="faq-ans">
+          Avec les systèmes d'injection numérique automatisés modernes et les protocoles DSA optimisés, la qualité diagnostique est cliniquement adéquate pour la grande majorité des procédures des membres inférieurs et de l'aorte. La CO₂ a des propriétés physiques différentes du produit de contraste iodé : les gaz compressibles produisent des artefacts différents qui nécessitent d'adapter la technique d'acquisition, mais ne compromettent pas le diagnostic. Pour les phases les plus critiques d'une procédure, il est toujours possible de compléter avec une petite dose de produit de contraste iodé (approche hybride CO₂-first).
+        </div>
+      </details>
+
+      <details>
+        <summary>Comment gérer un patient dialysé qui a besoin d'une angiographie ?</summary>
+        <div class="faq-ans">
+          Chez le patient dialysé, la préoccupation pour la CI-AKI est déjà sans objet (les reins ne fonctionnent pas), mais l'utilisation du produit de contraste iodé reste déconseillée car elle peut endommager la fonction rénale résiduelle, rendre la gestion des fluides plus difficile et, dans certains cas, compliquer la gestion de la fistule de dialyse. La CO₂ est le choix idéal — notamment pour l'angiographie des fistules artérioveineuses, où elle offre une excellente qualité d'image.
+        </div>
+      </details>
+
+      <details>
+        <summary>Comment gérer un cas où la CO₂ seule est insuffisante ?</summary>
+        <div class="faq-ans">
+          <ul>
+            <li>Technique hybride CO₂-first : utiliser la CO₂ pour l'ensemble de la phase diagnostique et seulement de petites doses de produit de contraste iodé pour la phase interventionnelle critique</li>
+            <li>Optimiser le positionnement du patient (Trendelenburg) pour améliorer la qualité d'image CO₂</li>
+            <li>Utiliser un logiciel de post-traitement DSA spécifique à la CO₂</li>
+            <li>Dans les cas vraiment complexes : discuter du rapport risque/bénéfice avec le néphrologue et documenter le choix</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Combien de ml de CO₂ peut-on injecter au total par séance ?</summary>
+        <div class="faq-ans">Il n'existe pas de limite absolue standardisée, car la CO₂ est rapidement éliminée par les poumons. La pratique clinique courante prévoit des injections de 20–60 ml chacune, avec des pauses de 1–2 minutes entre les injections pour assurer la clairance pulmonaire. Les systèmes d'injection automatisés numériques suivent les volumes en temps réel et peuvent définir des limites de sécurité configurables par l'opérateur.</div>
+      </details>
+    </div>
+
+  <div class="cta-card" id="strutture">
+    <h3>🏥 Plus de 100 structures en Italie utilisent déjà la CO₂</h3>
+    <p>Êtes-vous un médecin souhaitant savoir où orienter un patient, ou un spécialiste souhaitant des informations sur <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal-light)">Angiodroid®</a></strong> systèmes ? Écrivez-nous.</p>
+    <div class="email-block">
+      <a class="btn-gmail" href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Information%20request%20-%20CO2%20angiography" target="_blank" rel="noopener">✉ Nous écrire un email</a>
+      <div class="email-plain">
+        ou copier l'adresse : <span class="email-addr">scrivi@angiodroid.com</span>
+        <button class="copy-btn" onclick="copyEmail(this)">Copier</button>
+      </div>
+    </div>
+    <span style="display:block;margin-top:.75rem;font-size:.82rem;color:rgba(255,255,255,.55);">Nous répondrons avec des informations sur la structure la plus proche ou les systèmes disponibles en Italie</span>
+  </div>
+
+</div>
+
+<footer>
+  <div class="ft">
+    <div>
+      <div class="ft-logo">ACDA Academy</div>
+      <div style="margin-top:.3rem;font-size:.78rem;">Automated Carbon Dioxide Angiography</div>
+    </div>
+    <div class="ft-links">
+      <a href="/index-fr.html">Accueil</a>
+      <a href="paziente-fr.html">Pour les patients</a>
+      <a href="strutture-fr.html">Trouver une structure</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=scrivi@angiodroid.com&su=Information%20request%20-%20CO2%20angiography" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem;">Nous contacter</a>
+    </div>
+  </div>
+  <div class="ft-disc">Les informations présentes sur ce site ont un but purement éducatif et d'information clinique. Elles ne remplacent pas l'évaluation clinique individuelle du patient. Référez-vous toujours aux directives actualisées et à votre propre jugement professionnel.</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobile-menu').classList.toggle('open');}
+document.addEventListener('click',function(e){var m=document.getElementById('mobile-menu'),b=document.querySelector('.hamburger');if(m&&b&&!m.contains(e.target)&&!b.contains(e.target))m.classList.remove('open');});
+
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function activateTab(id) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + id).classList.add('active');
+  var btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(function(btn) {
+    if (btn.getAttribute('onclick') && btn.getAttribute('onclick').indexOf("'" + id + "'") !== -1) {
+      btn.classList.add('active');
+    }
+  });
+}
+
+function copyEmail(btn){
+  navigator.clipboard.writeText('scrivi@angiodroid.com').then(function(){
+    btn.textContent='Copié ✓'; btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent='Copier'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+</body>
+</html>
