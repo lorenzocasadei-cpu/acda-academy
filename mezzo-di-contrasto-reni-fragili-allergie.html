@@ -288,6 +288,62 @@
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista.</div>
+<div style="max-width:1140px;margin:1rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.74rem;color:rgba(255,255,255,.28)">
+  <span>© 2026 <a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Angiodroid S.p.A.</a> · P.IVA IT03310711209 · Via Speranza 35, 40068 San Lazzaro di Savena (BO) · Sito informativo</span>
+  <span style="display:flex;gap:1rem"><a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/20130566/cookie-policy" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Cookie Policy</a></span>
+</div>
 </footer>
+
+<!-- ── COOKIE BANNER ACDA ── -->
+<style>
+#acda-cookie-bar{position:fixed;bottom:0;left:0;right:0;background:#00363B;color:rgba(255,255,255,.88);padding:1rem 1.5rem;z-index:9999;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:'Barlow',sans-serif;font-size:.83rem;line-height:1.55;box-shadow:0 -2px 12px rgba(0,0,0,.25);transform:translateY(100%);transition:transform .35s ease}
+#acda-cookie-bar.show{transform:translateY(0)}
+#acda-cookie-bar a{color:#58C5C0;text-decoration:underline;text-underline-offset:2px}
+#acda-cookie-bar a:hover{color:white}
+.acda-cookie-btn{background:#EF7D00;color:white;border:none;padding:.55rem 1.4rem;border-radius:3px;cursor:pointer;font-family:'Barlow',sans-serif;font-size:.83rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;transition:background .15s}
+.acda-cookie-btn:hover{background:#d06e00}
+.acda-cookie-btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.35);color:rgba(255,255,255,.75);margin-left:.4rem}
+.acda-cookie-btn.secondary:hover{background:rgba(255,255,255,.08);color:white}
+</style>
+<div id="acda-cookie-bar" role="dialog" aria-label="Cookie information" aria-live="polite">
+  <span id="acda-cookie-text"></span>
+  <div style="display:flex;gap:.4rem;flex-shrink:0">
+    <button class="acda-cookie-btn" onclick="acdaCookieAccept()">OK</button>
+    <a class="acda-cookie-btn secondary" id="acda-cookie-policy-link" href="#" target="_blank" rel="noopener">Cookie Policy</a>
+  </div>
+</div>
+<script>
+(function(){
+  var lang = document.documentElement.lang || 'it';
+  var msgs = {
+    it: 'Questo sito usa solo cookie tecnici necessari al funzionamento. Non raccogliamo dati personali tramite cookie. Titolare: <a href="https://www.angiodroid.com" target="_blank" rel="noopener">Angiodroid S.p.A.</a> — <a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener">Privacy Policy</a>',
+    en: 'This site uses only technical cookies necessary for operation. We do not collect personal data via cookies. Controller: <a href="https://www.angiodroid.com" target="_blank" rel="noopener">Angiodroid S.p.A.</a> — <a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener">Privacy Policy</a>',
+    fr: 'Ce site utilise uniquement des cookies techniques nécessaires au fonctionnement. Nous ne collectons pas de données personnelles via des cookies. Responsable : <a href="https://www.angiodroid.com" target="_blank" rel="noopener">Angiodroid S.p.A.</a> — <a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener">Politique de confidentialité</a>',
+    de: 'Diese Website verwendet nur technisch notwendige Cookies. Wir erheben keine personenbezogenen Daten über Cookies. Verantwortlicher: <a href="https://www.angiodroid.com" target="_blank" rel="noopener">Angiodroid S.p.A.</a> — <a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener">Datenschutzerklärung</a>'
+  };
+  var policyLinks = {
+    it: 'https://www.iubenda.com/privacy-policy/20130566/cookie-policy',
+    en: 'https://www.iubenda.com/privacy-policy/20130566/cookie-policy',
+    fr: 'https://www.iubenda.com/privacy-policy/20130566/cookie-policy',
+    de: 'https://www.iubenda.com/privacy-policy/20130566/cookie-policy'
+  };
+  var key = 'acda_cookie_ok';
+  if(localStorage.getItem(key)) return;
+  var bar = document.getElementById('acda-cookie-bar');
+  var txt = document.getElementById('acda-cookie-text');
+  var lnk = document.getElementById('acda-cookie-policy-link');
+  var l = lang.substring(0,2);
+  txt.innerHTML = msgs[l] || msgs['en'];
+  lnk.href = policyLinks[l] || policyLinks['en'];
+  lnk.textContent = l === 'de' ? 'Cookie-Richtlinie' : l === 'fr' ? 'Politique cookies' : l === 'it' ? 'Cookie Policy' : 'Cookie Policy';
+  setTimeout(function(){ bar.classList.add('show'); }, 600);
+})();
+function acdaCookieAccept(){
+  localStorage.setItem('acda_cookie_ok','1');
+  var bar = document.getElementById('acda-cookie-bar');
+  bar.style.transform='translateY(100%)';
+  setTimeout(function(){ bar.style.display='none'; }, 400);
+}
+</script>
 </body>
 </html>
