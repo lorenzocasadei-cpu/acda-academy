@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog ACDA Academy – Angiografia, CO₂ e sicurezza renale</title>
@@ -150,9 +164,36 @@
 
       <div class="articles" id="articles-grid">
 
-    <!-- ARTICOLO 6 — FEATURED (più recente, prossima settimana) -->
-    <article class="article-card featured" data-cat="paziente">
-      <div class="card-img"><div class="card-img-icon">💉</div></div>
+    <!-- ARTICOLO 8 — FEATURED (più recente) -->
+    <article class="article-card featured" data-cat="paziente caregiver">
+      <div class="card-img"><div class="card-img-icon">📋</div></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag paziente">Paziente</span>
+          <span class="tag caregiver">Famiglia</span>
+          <span class="card-date">6 Luglio 2026</span>
+        </div>
+        <h2>Consenso informato rene-safe: come discutere iodato vs CO₂ con il tuo medico</h2>
+        <p>Cosa hai diritto di sapere prima di firmare, quali domande fare allo specialista senza sentirti in colpa e come riconoscere un centro davvero sicuro per il rene. Guida per pazienti e caregiver.</p>
+        <a href="come-discutere-iodato-vs-CO2-con-medico.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- ARTICOLO 7 — Medico di base -->
+    <article class="article-card" data-cat="medico">
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag medico">Medico di base</span>
+          <span class="card-date">6 Luglio 2026</span>
+        </div>
+        <h2>Quando evitare lo iodato: guida pratica per il MMG tra rischio renale e invio al centro giusto</h2>
+        <p>Percorso decisionale per il medico di medicina generale: segnali di rischio renale, mini-algoritmo in 3 passaggi, domande da porre allo specialista e come impostare un invio Zero-Contrast in 5 passi.</p>
+        <a href="quando-evitare-lo-iodato-guida-pratica-per-il-MMG.html" class="card-link">Leggi l'articolo →</a>
+      </div>
+    </article>
+
+    <!-- ARTICOLO 6 -->
+    <article class="article-card" data-cat="paziente">
       <div class="card-body">
         <div class="card-meta">
           <span class="tag paziente">Paziente</span>
@@ -228,19 +269,6 @@
         <h2>Angiografia: cosa succede prima, durante e dopo (e come ridurre il contrasto iodato)</h2>
         <p>Guida completa per chi deve sottoporsi a un'angiografia: preparazione, cosa si sente in sala, recupero a casa. Con sezione dedicata alle strategie contrast-sparing e alla CO₂ per chi ha reni fragili.</p>
         <a href="angiografia-prima-durante-dopo-contrast-sparing.html" class="card-link">Leggi l'articolo →</a>
-      </div>
-    </article>
-
-    <!-- PLACEHOLDER -->
-    <article class="article-card" data-cat="medico" style="opacity:.45;pointer-events:none">
-      <div class="card-body">
-        <div class="card-meta">
-          <span class="tag medico">Medico</span>
-          <span class="card-date">Prossimamente</span>
-        </div>
-        <h2>Il KID Trial: primo RCT sulla CO₂ per la prevenzione del danno renale</h2>
-        <p>Analisi del protocollo del primo trial randomizzato controllato per valutare la CO₂ nella prevenzione della nefropatia da contrasto.</p>
-        <span class="card-link">In arrivo →</span>
       </div>
     </article>
 
@@ -339,10 +367,23 @@ function filterArticles(cat, btn) {
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>
