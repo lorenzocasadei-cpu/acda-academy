@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ACDA Academy – Angiographie CO₂ : une alternative sûre aux produits de contraste iodés</title>
@@ -16,6 +30,7 @@
   <link rel="alternate" hreflang="fr" href="https://acda-academy.com/index-fr.html">
   <link rel="alternate" hreflang="fr" href="https://acda-academy.com/index-fr.html">
   <link rel="alternate" hreflang="de" href="https://acda-academy.com/index-de.html">
+  <link rel="alternate" hreflang="es" href="https://acda-academy.com/index-es.html">
 
   <script type="application/ld+json">
   {
@@ -264,7 +279,8 @@
         <a href="index.html">IT</a><span>/</span>
         <a href="index-en.html">EN</a><span>/</span>
         <a href="#" class="active">FR</a><span>/</span>
-        <a href="index-de.html">DE</a>
+        <a href="index-de.html">DE</a><span>/</span>
+      <a href="index-es.html">ES</a>
       </span>
     </nav>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -285,7 +301,8 @@
     <a href="index.html">IT</a><span>/</span>
     <a href="index-en.html">EN</a><span>/</span>
     <a href="#" class="active">FR</a><span>/</span>
-    <a href="index-de.html">DE</a>
+    <a href="index-de.html">DE</a><span>/</span>
+    <a href="index-es.html">ES</a>
   </div>
 </div>
 
@@ -626,10 +643,23 @@ function copyEmail(btn){
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>

@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patientenratgeber: Angiographie, Kontrastmittel und die CO₂-Alternative | ACDA Academy</title>
@@ -9,6 +23,7 @@
   <link rel="canonical" href="https://acda-academy.com/paziente-de.html">
   <link rel="alternate" hreflang="it" href="https://acda-academy.com/paziente.html">
   <link rel="alternate" hreflang="de" href="https://acda-academy.com/paziente-de.html">
+  <link rel="alternate" hreflang="es" href="https://acda-academy.com/paziente-es.html">
   <link rel="alternate" hreflang="de" href="https://acda-academy.com/paziente-de.html">
   <link rel="alternate" hreflang="de" href="https://acda-academy.com/paziente-de.html">
   <script type="application/ld+json">
@@ -211,7 +226,8 @@
       <a href="/paziente.html">IT</a><span>/</span>
       <a href="/paziente-en.html">EN</a><span>/</span>
       <a href="/paziente-fr.html">FR</a><span>/</span>
-      <a href="#" class="active">DE</a>
+      <a href="#" class="active">DE</a><span>/</span>
+      <a href="paziente-es.html">ES</a>
     </span>
     <a href="/index-de.html" class="back-link">← Home</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="9.75" width="22" height="2.5" rx="1.25" fill="currentColor"/><rect y="15.5" width="22" height="2.5" rx="1.25" fill="currentColor"/></svg></button>
@@ -227,7 +243,8 @@
     <a href="/paziente.html">IT</a><span>/</span>
     <a href="/paziente-en.html">EN</a><span>/</span>
     <a href="/paziente-fr.html">FR</a><span>/</span>
-    <a href="#" class="active">DE</a>
+    <a href="#" class="active">DE</a><span>/</span>
+    <a href="/paziente-es.html">ES</a>
   </div>
 </div>
 
@@ -561,10 +578,23 @@ function copyEmail(btn){
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>

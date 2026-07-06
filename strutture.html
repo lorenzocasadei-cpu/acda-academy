@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dove fare l'angiografia con CO₂ in Italia | ACDA Academy</title>
@@ -121,7 +135,8 @@
       <a href="#" class="active">IT</a><span>/</span>
       <a href="strutture-en.html">EN</a><span>/</span>
       <a href="strutture-fr.html">FR</a><span>/</span>
-      <a href="strutture-de.html">DE</a>
+      <a href="strutture-de.html">DE</a><span>/</span>
+      <a href="strutture-es.html">ES</a>
     </span>
     <a href="/" class="back-link">← Home</a>
   </div>
@@ -328,10 +343,23 @@ document.addEventListener('click', function(e){
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>
