@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi serve davvero il contrasto? Guida angiografia | ACDA Academy</title>
@@ -190,7 +204,7 @@
 
   <h2 id="co2">Angiografia con CO₂: cos'è e perché può aiutare chi ha reni fragili</h2>
   <p>Nell'angiografia con CO₂, il gas viene iniettato nel vaso e crea un "contrasto negativo" che permette di visualizzare il lume vascolare. È una tecnica usata soprattutto per l'arteriografia periferica e per procedure endovascolari sotto il diaframma, con l'obiettivo di <strong>ridurre o evitare lo iodio</strong> nei pazienti a rischio di danno renale o con allergia al mezzo iodato.</p>
-  <p>Ciò che spesso fa la differenza nella pratica è la <strong>standardizzazione del metodo</strong>. Iniettare CO₂ in modo manuale e non controllato può aumentare variabilità e incertezza. Sistemi automatici e digitali come <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal)">Angiodroid®</a></strong> rendono l'iniezione <strong>ripetibile, tracciabile e più controllata</strong>, riducendo la variabilità operatore-dipendente e supportando un percorso contrast-sparing strutturato.</p>
+  <p>Ciò che spesso fa la differenza nella pratica è la <strong>standardizzazione del metodo</strong>. Iniettare CO₂ in modo manuale e non controllato può aumentare variabilità e incertezza. I sistemi automatici e digitali di iniezione rendono l'iniezione <strong>ripetibile, tracciabile e più controllata</strong>, riducendo la variabilità operatore-dipendente e supportando un percorso contrast-sparing strutturato.</p>
 
   <hr class="divider">
 
@@ -308,10 +322,13 @@
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista.</div>
-<div style="max-width:1140px;margin:1rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.74rem;color:rgba(255,255,255,.28)">
-  <span>© 2026 <a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Angiodroid S.p.A.</a> · P.IVA IT03310711209 · Via Speranza 35, 40068 San Lazzaro di Savena (BO) · Sito informativo</span>
-  <span style="display:flex;gap:1rem"><a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/20130566/cookie-policy" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Cookie Policy</a></span>
-</div>
+<div style="max-width:1140px;margin:1.25rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)">
+    <p style="font-size:.72rem;line-height:1.6;color:rgba(255,255,255,.32);margin:0 0 .75rem;max-width:900px">Sito informativo a carattere scientifico-divulgativo sull'angiografia con CO₂ e la prevenzione del danno renale da mezzo di contrasto. Non costituisce pubblicità di dispositivi medici né sostituisce il parere medico. Contenuti a fini educativi, conformi alle Linee Guida del Ministero della Salute sulla comunicazione sanitaria dei dispositivi medici (aprile 2025). <a href="/note-legali.html" style="color:rgba(255,255,255,.4);text-decoration:underline">Note legali</a></p>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem">
+      <span style="font-size:.62rem;color:rgba(255,255,255,.2)">© 2026 <a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.24);text-decoration:none">Angiodroid S.p.A.</a> · P.IVA IT03310711209 · Via Speranza 35, 40068 San Lazzaro di Savena (BO)</span>
+      <span style="display:flex;gap:1rem;font-size:.68rem"><a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);text-decoration:none">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/20130566/cookie-policy" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);text-decoration:none">Cookie Policy</a></span>
+    </div>
+  </div>
 </footer>
 
 <!-- ── COOKIE BANNER ACDA ── -->
@@ -360,10 +377,23 @@
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>

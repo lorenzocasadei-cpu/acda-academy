@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+<!-- ── Google Analytics 4 — consent-based ── -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+// Default: deny all until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'wait_for_update': 500
+});
+gtag('js', new Date());
+gtag('config', 'G-8PYW8QWJEM', {'anonymize_ip': true});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PYW8QWJEM"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angiografia e mezzo di contrasto: rischio reni | Guida | ACDA Academy</title>
@@ -209,7 +223,7 @@
   <h2 id="co2">Alternative nelle procedure sotto il diaframma: contrast-sparing e CO₂</h2>
   <p>Quando la procedura riguarda vasi <strong>sotto il diaframma</strong> (arterie degli arti inferiori, distretto iliaco, femorale, popliteo, e in alcune situazioni distretti viscerali selezionati), il team può discutere strategie per <strong>ridurre o evitare</strong> il contrasto iodato — approccio chiamato <strong>contrast-sparing</strong> o, in casi selezionati, <strong>Zero Contrast</strong>.</p>
   <p>Una delle opzioni è la <strong>CO₂ (anidride carbonica)</strong> come mezzo di contrasto alternativo: un gas che può essere impiegato in distretti specifici con l'obiettivo di ridurre l'esposizione allo iodio nei pazienti con malattia renale cronica (CKD) o alto rischio di AKI. Non è adatta a tutte le procedure e va valutata dal team in base al caso clinico.</p>
-  <p>In Italia esistono sistemi automatici che standardizzano l'uso della CO₂ in modo controllato e tracciabile. <strong><a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:var(--teal)">Angiodroid®</a></strong> sviluppa in Italia iniettori automatici per angiografia con CO₂, presenti in oltre 100 strutture ospedaliere, pensati per supportare procedure renale-sparing nelle indicazioni appropriate.</p>
+  <p>In Italia esistono sistemi automatici che standardizzano l'uso della CO₂ in modo controllato e tracciabile. In Italia sono disponibili iniettori automatici per angiografia con CO₂, presenti in oltre 100 strutture ospedaliere, pensati per supportare procedure renale-sparing nelle indicazioni appropriate.</p>
 
   <div class="info-box orange">
     ⚠ La CO₂ non sostituisce automaticamente lo iodio in ogni situazione. La domanda utile da portare in visita: <em>"La mia procedura è sotto il diaframma — nel mio caso sono possibili strategie contrast-sparing o l'uso di CO₂?"</em>
@@ -292,10 +306,13 @@
     </div>
   </div>
   <div class="ft-disc">Le informazioni presenti su questo sito hanno scopo puramente educativo e informativo. Non sostituiscono il parere del medico curante o dello specialista.</div>
-<div style="max-width:1140px;margin:1rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.74rem;color:rgba(255,255,255,.28)">
-  <span>© 2026 <a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Angiodroid S.p.A.</a> · P.IVA IT03310711209 · Via Speranza 35, 40068 San Lazzaro di Savena (BO) · Sito informativo</span>
-  <span style="display:flex;gap:1rem"><a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/20130566/cookie-policy" target="_blank" rel="noopener" style="color:rgba(255,255,255,.35);text-decoration:none">Cookie Policy</a></span>
-</div>
+<div style="max-width:1140px;margin:1.25rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)">
+    <p style="font-size:.72rem;line-height:1.6;color:rgba(255,255,255,.32);margin:0 0 .75rem;max-width:900px">Sito informativo a carattere scientifico-divulgativo sull'angiografia con CO₂ e la prevenzione del danno renale da mezzo di contrasto. Non costituisce pubblicità di dispositivi medici né sostituisce il parere medico. Contenuti a fini educativi, conformi alle Linee Guida del Ministero della Salute sulla comunicazione sanitaria dei dispositivi medici (aprile 2025). <a href="/note-legali.html" style="color:rgba(255,255,255,.4);text-decoration:underline">Note legali</a></p>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem">
+      <span style="font-size:.62rem;color:rgba(255,255,255,.2)">© 2026 <a href="https://www.angiodroid.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.24);text-decoration:none">Angiodroid S.p.A.</a> · P.IVA IT03310711209 · Via Speranza 35, 40068 San Lazzaro di Savena (BO)</span>
+      <span style="display:flex;gap:1rem;font-size:.68rem"><a href="https://www.iubenda.com/privacy-policy/20130566" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);text-decoration:none">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/20130566/cookie-policy" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);text-decoration:none">Cookie Policy</a></span>
+    </div>
+  </div>
 </footer>
 
 <!-- ── COOKIE BANNER ACDA ── -->
@@ -344,10 +361,23 @@
 })();
 function acdaCookieAccept(){
   localStorage.setItem('acda_cookie_ok','1');
+  // Grant GA4 consent
+  if(typeof gtag === 'function'){
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    gtag('event', 'cookie_consent_granted');
+  }
   var bar = document.getElementById('acda-cookie-bar');
   bar.style.transform='translateY(100%)';
   setTimeout(function(){ bar.style.display='none'; }, 400);
 }
+// If already consented (returning visitor), grant immediately
+(function(){
+  if(localStorage.getItem('acda_cookie_ok') && typeof gtag === 'function'){
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+  }
+})();
 </script>
 </body>
 </html>
