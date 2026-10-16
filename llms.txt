@@ -18,6 +18,7 @@ Le pagine principali sono disponibili anche in inglese, francese, tedesco e spag
 
 ## Articoli del blog
 - /angiografia-con-co2-protezione-renale-qualita-immagine.html — Protezione renale, qualità d'immagine e scelta tra Zero e Low-Contrast (per lo specialista)
+- /sicurezza-mezzo-di-contrasto-esami-vasi-vigilanza.html — Sicurezza del mezzo di contrasto negli esami dei vasi: prima, dopo e vigilanza
 - /sicurezza-e-criteri-per-scegliere-iniettore-automatico.html — Imaging, sicurezza e criteri per scegliere l'iniettore automatico
 - /angiografia-con-co2-imaging-sicurezza-monitoraggio.html — Imaging, sicurezza e monitoraggio passo dopo passo
 - /co2-in-angiografia-cosa-e-normale-sentire-e-cosa-chiarire-prima.html — Cosa è normale sentire con la CO₂ e cosa chiarire prima
