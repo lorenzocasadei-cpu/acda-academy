@@ -1,0 +1,58 @@
+# ACDA Academy — Automated Carbon Dioxide Angiography
+# Informazione scientifico-divulgativa sull'angiografia con CO₂ e la prevenzione del danno renale da mezzo di contrasto
+
+## Cos'è questo sito
+ACDA Academy (acda-academy.com) è un sito tematico scientifico-divulgativo dedicato alla sicurezza del mezzo di contrasto iodato e all'angiografia con CO₂ (anidride carbonica medicale), una tecnica che in pazienti e distretti vascolari selezionati permette di ridurre o evitare l'uso del contrasto iodato. Si rivolge a pazienti, caregiver, medici di medicina generale e specialisti vascolari.
+
+Il sito non costituisce pubblicità di dispositivi medici e non sostituisce il parere medico. I contenuti hanno finalità educative e seguono le Linee Guida del Ministero della Salute sulla comunicazione sanitaria dei dispositivi medici (aprile 2025). Informazioni sul titolare: /note-legali.html
+
+## Pagine principali
+- / — Home: panoramica, FAQ, confronto tra CO₂ e mezzo di contrasto iodato
+- /paziente.html — Guida per il paziente: cos'è l'angiografia, rischi del mezzo di contrasto, quando si può valutare la CO₂, cosa fare prima e dopo
+- /medico.html — Risorse cliniche per medici di base, chirurghi vascolari e radiologi interventisti: stratificazione del rischio, strategie Low/Zero-Contrast, fonti scientifiche
+- /strutture.html — Come trovare una struttura in Italia che esegue angiografie con CO₂
+- /blog.html — Indice degli articoli di approfondimento (solo in italiano)
+- /note-legali.html — Note legali e informazioni sul titolare
+
+Le pagine principali sono disponibili anche in inglese, francese, tedesco e spagnolo (suffissi -en, -fr, -de, -es, es. /paziente-en.html).
+
+## Articoli del blog
+- /angiografia-con-co2-protezione-renale-qualita-immagine.html — Protezione renale, qualità d'immagine e scelta tra Zero e Low-Contrast (per lo specialista)
+- /sicurezza-e-criteri-per-scegliere-iniettore-automatico.html — Imaging, sicurezza e criteri per scegliere l'iniettore automatico
+- /angiografia-con-co2-imaging-sicurezza-monitoraggio.html — Imaging, sicurezza e monitoraggio passo dopo passo
+- /co2-in-angiografia-cosa-e-normale-sentire-e-cosa-chiarire-prima.html — Cosa è normale sentire con la CO₂ e cosa chiarire prima
+- /angiografia-con-co2-applicazioni-sicurezza-alternative.html — Applicazioni cliniche, sicurezza e alternative allo iodato
+- /zero-contrast-in-cardiologia.html — Strategie Low-Contrast e Zero-Contrast in cardiologia
+- /da-low-contrast-a-zero-contrast.html — Da Low-Contrast a Zero-Contrast: la protezione renale si pianifica prima
+- /checklist-prima-procedura-rene-fragile-centro-low-zero-contrast.html — Checklist prima della procedura con rene fragile
+- /egfr-basso-iodato-cosa-puo-decidere-mmg.html — eGFR basso e iodato: cosa può decidere il medico di base
+- /invio-rene-safe-mmg-esame-contrast.html — Invio "rene-safe" dal medico di famiglia
+- /come-discutere-iodato-vs-CO2-con-medico.html — Come discutere iodato e CO₂ con il medico
+- /quando-evitare-lo-iodato-guida-pratica-per-il-MMG.html — Quando evitare lo iodato: guida pratica per il MMG
+- /mi-serve-davvero-il-contrasto-angiografia-contrast-sparing.html — Mi serve davvero il contrasto?
+- /mezzo-di-contrasto-reni-fragili-allergie.html — Mezzo di contrasto, reni fragili e allergie
+- /creatinina-egfr-angiografia-rischio-reni-alternative-contrasto-iodato.html — Creatinina, eGFR e rischio renale
+- /angiografia-mezzo-di-contrasto-rischio-reni.html — Angiografia e mezzo di contrasto: rischio per i reni
+- /angiografia-con-co2-risparmio-costi-giorni-ricovero.html — Costi e giorni di ricovero
+- /angiografia-prima-durante-dopo-contrast-sparing.html — Angiografia: prima, durante e dopo
+
+## Argomenti trattati
+- Danno renale acuto associato al mezzo di contrasto iodato (CI-AKI / CA-AKI)
+- Angiografia con CO₂ come opzione per ridurre o evitare lo iodato in pazienti e distretti selezionati
+- Strategie Low-Contrast e Zero-Contrast nelle procedure vascolari
+- Rischio renale in pazienti con malattia renale cronica, diabete, età avanzata, arteriopatia periferica
+- Stratificazione del rischio in base a eGFR e comorbidità
+- Limiti e controindicazioni della CO₂ (es. uso arterioso sopra il diaframma generalmente evitato)
+- Fonti scientifiche: studi indicizzati su PubMed, linee guida e revisioni sistematiche (es. ESUR)
+
+## Avvertenza
+Le informazioni hanno scopo educativo. La scelta del mezzo di contrasto e della strategia procedurale spetta sempre al team clinico, in accordo con il paziente.
+
+## Contatto
+scrivi@angiodroid.com — per informazioni sul sito e sulle strutture che eseguono angiografie con CO₂
+
+## Lingua
+Italiano (pagine principali anche in EN, FR, DE, ES)
+
+## Aggiornamento
+2026-10-16
